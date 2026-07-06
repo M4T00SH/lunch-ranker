@@ -37,6 +37,8 @@ def render_page(data: dict) -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="apple-touch-icon.png">
 <title>Protein Lunch Ranker</title>
 <style>
 :root {{ --bg:#fff; --fg:#1a1a1a; --sub:#777; --line:#eee; --accent:#0a7d38; --chip:#f2f2f2; }}
