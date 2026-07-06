@@ -67,9 +67,13 @@ tr.detail.open {{ display:table-row; }}
 tr.detail td {{ color:var(--sub); font-size:13px; border-bottom:1px solid var(--line); padding-top:0; }}
 .empty {{ color:var(--sub); }}
 footer {{ color:var(--sub); font-size:12px; margin-top:14px; }}
+#refresh {{ position:fixed; top:10px; right:12px; width:38px; height:38px;
+  border-radius:50%; border:1px solid var(--line); background:var(--chip);
+  color:var(--fg); font-size:19px; line-height:1; cursor:pointer; }}
 </style>
 </head>
 <body>
+<button id="refresh" onclick="freshReload()" title="Refresh">&#8635;</button>
 <h1>🥩 Protein Lunch Ranker</h1>
 <div class="meta">{html.escape(data["day_label"])} · generated {html.escape(data["generated_at"])} ·
 estimates: {html.escape(data["method"])} · tap a row for reasoning</div>
@@ -82,7 +86,25 @@ estimates: {html.escape(data["method"])} · tap a row for reasoning</div>
 </tbody>
 </table>
 <footer>Estimates are approximate. Sources: restaurant websites, fetched at generation time.</footer>
-<script type="application/json" id="data">{json.dumps({"date": data["date"]})}</script>
+<script type="application/json" id="data">{json.dumps({"date": data["date"], "generated_at": data["generated_at"]})}</script>
+<script>
+// iOS home-screen apps cache the page and don't reload on reopen, so:
+// - freshReload() bypasses the cache with a throwaway query param
+// - on returning to the app, reload automatically if the server has newer data
+function freshReload() {{ location.replace(location.pathname + "?r=" + Date.now()); }}
+async function checkStale() {{
+  try {{
+    var r = await fetch("data.json?r=" + Date.now(), {{cache: "no-store"}});
+    var live = await r.json();
+    var shown = JSON.parse(document.getElementById("data").textContent);
+    if (live.date !== shown.date || live.generated_at !== shown.generated_at) freshReload();
+  }} catch (e) {{}}
+}}
+document.addEventListener("visibilitychange", function () {{
+  if (!document.hidden) checkStale();
+}});
+checkStale();
+</script>
 </body>
 </html>
 """
