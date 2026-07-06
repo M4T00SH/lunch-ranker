@@ -2,13 +2,14 @@ name: Update lunch menus
 
 on:
   schedule:
-    # UTC crons — 10:45 and 11:30 Bratislava time in summer (CEST);
-    # one hour earlier in winter, which is fine.
-    # NOTE: re-pushed 2026-07-06 — GitHub never registered the schedule from
-    # the initial 2026-07-05 push (zero scheduled runs); editing this file
-    # forces re-registration.
-    - cron: "45 8 * * 1-5"
-    - cron: "30 9 * * 1-5"
+    # Target: 10:45 and 11:30 Europe/Bratislava, year-round. GitHub cron is
+    # UTC-only, so all four candidate UTC times are scheduled and the
+    # dst-guard job skips the two whose local time is wrong for the season
+    # (tzdata on the runner knows the EU DST rules — no hardcoded dates).
+    - cron: "45 8 * * 1-5"   # 10:45 in summer (CEST) / 09:45 in winter (CET)
+    - cron: "45 9 * * 1-5"   # 11:45 in summer        / 10:45 in winter
+    - cron: "30 9 * * 1-5"   # 11:30 in summer        / 10:30 in winter
+    - cron: "30 10 * * 1-5"  # 12:30 in summer        / 11:30 in winter
   workflow_dispatch:
 
 permissions:
@@ -20,7 +21,36 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  dst-guard:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.guard.outputs.run }}
+    steps:
+      - id: guard
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          python3 - <<'EOF'
+          import datetime, os, zoneinfo
+
+          sched = os.environ.get("SCHEDULE", "")
+          if not sched:
+              ok, note = True, "manual dispatch"
+          else:
+              minute, hour = sched.split()[:2]
+              utc = datetime.datetime.now(datetime.timezone.utc).replace(
+                  hour=int(hour), minute=int(minute), second=0, microsecond=0)
+              local = utc.astimezone(zoneinfo.ZoneInfo("Europe/Bratislava"))
+              ok = (local.hour, local.minute) in {(10, 45), (11, 30)}
+              note = f"cron '{sched}' is {local:%H:%M} local"
+          print(note, "->", "run" if ok else "skip (wrong DST offset)")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"run={'yes' if ok else 'no'}\n")
+          EOF
+
   update:
+    needs: dst-guard
+    if: needs.dst-guard.outputs.run == 'yes'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
