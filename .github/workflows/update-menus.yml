@@ -4,6 +4,9 @@ on:
   schedule:
     # UTC crons — 09:25, 10:40 and 11:55 Bratislava time in summer (CEST);
     # one hour earlier in winter, which is fine.
+    # NOTE: re-pushed 2026-07-06 — GitHub never registered the schedule from
+    # the initial 2026-07-05 push (zero scheduled runs); editing this file
+    # forces re-registration.
     - cron: "25 7 * * 1-5"
     - cron: "40 8 * * 1-5"
     - cron: "55 9 * * 1-5"
