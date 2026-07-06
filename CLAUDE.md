@@ -23,6 +23,11 @@ involved in production.
 - Debug bad parses: `logs/run-YYYY-MM-DD.log` has the raw dish list per
   restaurant.
 
+- Schedule: 10:45 + 11:30 local year-round via 4 UTC crons + dst-guard job
+  (see workflow). PENDING as of 2026-07-06: no scheduled run has ever fired
+  (GitHub quirk; workflow re-pushed as fix) — confirm a run appears on
+  2026-07-07 ~10:45-11:05, else escalate to a sturdier trigger.
+
 ## Verify changes
 
 `python run.py --day pondelok --no-open` then inspect `docs/index.html` /
