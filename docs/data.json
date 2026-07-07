@@ -1,7 +1,7 @@
 {
  "date": "2026-07-07",
  "day_label": "Utorok 07.07.2026",
- "generated_at": "14:24",
+ "generated_at": "14:34",
  "method": "AI (GPT-4o via GitHub Models)",
  "dishes": [
   {
@@ -12,17 +12,7 @@
    "price": "12,90 €",
    "protein_g": 45,
    "kcal": 600,
-   "reason": "Slow-cooked beef neck, potatoes, pepper sauce"
-  },
-  {
-   "restaurant": "MINT",
-   "name": "bravčová panenka sous-vide (pečené zemiaky s rozmarínom, hubová omáčka,, slaninový čips, bylinkový olej)",
-   "weight": "380 g | 180 g",
-   "category": "",
-   "price": "12.90 €",
-   "protein_g": 45,
-   "kcal": 650,
-   "reason": "Pork tenderloin, potatoes, mushroom sauce"
+   "reason": "Slow-cooked beef with potatoes and sauce"
   },
   {
    "restaurant": "PICKNICK",
@@ -32,17 +22,37 @@
    "price": "8,90 €",
    "protein_g": 40,
    "kcal": 500,
-   "reason": "Pork tenderloin, parmesan sauce, potatoes"
+   "reason": "Pork tenderloin with potatoes and sauce"
   },
   {
-   "restaurant": "DOCK7",
-   "name": "Chrumkavý kurací burger 400 g | 140 g (kuracie stehno, chrumkavé cestíčko, čedar,)",
-   "weight": "400 g | 140 g",
+   "restaurant": "MINT",
+   "name": "bravčová panenka sous-vide (pečené zemiaky s rozmarínom, hubová omáčka,, slaninový čips, bylinkový olej)",
+   "weight": "380 g | 180 g",
    "category": "",
-   "price": "12,90 €",
+   "price": "12.90 €",
    "protein_g": 40,
-   "kcal": 700,
-   "reason": "Chicken burger, cheddar, crispy coating"
+   "kcal": 600,
+   "reason": "Pork tenderloin with potatoes and sauce"
+  },
+  {
+   "restaurant": "FAJNE JEDLO",
+   "name": "Bravčový steak na srbský spôsob, restované zemiaky s cibuľkou",
+   "weight": "",
+   "category": "Hlavne jedlo",
+   "price": "",
+   "protein_g": 40,
+   "kcal": 600,
+   "reason": "Pork steak with potatoes and onions"
+  },
+  {
+   "restaurant": "WERK",
+   "name": "grilovaná bravčová panenka, batatový gratin, glazované šalotky,demi glace",
+   "weight": "350 g",
+   "category": "",
+   "price": "",
+   "protein_g": 40,
+   "kcal": 550,
+   "reason": "Grilled pork tenderloin with sides"
   },
   {
    "restaurant": "NOSTALGIA",
@@ -52,7 +62,7 @@
    "price": "",
    "protein_g": 40,
    "kcal": 600,
-   "reason": "Pork neck, bacon sauce, rice"
+   "reason": "Slow-cooked pork with rice"
   },
   {
    "restaurant": "NOSTALGIA",
@@ -62,7 +72,17 @@
    "price": "",
    "protein_g": 40,
    "kcal": 700,
-   "reason": "Pulled pork, cheddar sauce, fries"
+   "reason": "Pulled pork with cheddar and fries"
+  },
+  {
+   "restaurant": "FOOD GARDEN",
+   "name": "Pečené dolné kuracie stehienka v BBQ marináde, pečené zemiaky, Coleslaw",
+   "weight": "240g",
+   "category": "Denné menu",
+   "price": "8.40€",
+   "protein_g": 40,
+   "kcal": 600,
+   "reason": "BBQ chicken legs with sides"
   },
   {
    "restaurant": "UMAMI",
@@ -72,7 +92,7 @@
    "price": "8.40 €",
    "protein_g": 40,
    "kcal": 550,
-   "reason": "Pork tenderloin, mash, beans"
+   "reason": "Grilled pork with mashed potatoes"
   },
   {
    "restaurant": "PICKNICK",
@@ -82,17 +102,27 @@
    "price": "12,90 €",
    "protein_g": 35,
    "kcal": 450,
-   "reason": "Pork medallions, mash, wine sauce"
+   "reason": "Pork tenderloin with mash and sauce"
   },
   {
    "restaurant": "FAJNE JEDLO",
-   "name": "Bravčový steak na srbský spôsob, restované zemiaky s cibuľkou",
+   "name": "Kuracie červené kari s cícerom a zeleninou, basmati ryža",
    "weight": "",
    "category": "Hlavne jedlo",
    "price": "",
    "protein_g": 35,
    "kcal": 550,
-   "reason": "Pork steak, potatoes, onions"
+   "reason": "Chicken curry with chickpeas and rice"
+  },
+  {
+   "restaurant": "DOCK7",
+   "name": "Chrumkavý kurací burger 400 g | 140 g (kuracie stehno, chrumkavé cestíčko, čedar,)",
+   "weight": "400 g | 140 g",
+   "category": "",
+   "price": "12,90 €",
+   "protein_g": 35,
+   "kcal": 700,
+   "reason": "Chicken burger with cheddar and bun"
   },
   {
    "restaurant": "NOSTALGIA",
@@ -102,7 +132,7 @@
    "price": "",
    "protein_g": 35,
    "kcal": 550,
-   "reason": "Grilled chicken, gnocchi, creamy sauce"
+   "reason": "Grilled chicken with gnocchi"
   },
   {
    "restaurant": "NOSTALGIA",
@@ -112,7 +142,17 @@
    "price": "",
    "protein_g": 35,
    "kcal": 600,
-   "reason": "Fried schnitzel, potato salad"
+   "reason": "Fried schnitzel with potato salad"
+  },
+  {
+   "restaurant": "MESTIANSKY PIVOVAR",
+   "name": "Kuracie prsia tikka masala /jogurt, koriander, limetka/ ryža",
+   "weight": "180 g",
+   "category": "Utorok",
+   "price": "10.50 €",
+   "protein_g": 35,
+   "kcal": 500,
+   "reason": "Chicken tikka masala with rice"
   },
   {
    "restaurant": "APOLKA",
@@ -122,7 +162,7 @@
    "price": "",
    "protein_g": 35,
    "kcal": 550,
-   "reason": "Chicken cordon bleu, mashed potatoes"
+   "reason": "Chicken cordon bleu with sides"
   },
   {
    "restaurant": "FOOD GARDEN",
@@ -132,27 +172,37 @@
    "price": "8.40€",
    "protein_g": 35,
    "kcal": 500,
-   "reason": "Chicken cordon bleu, rice"
+   "reason": "Chicken cordon bleu with rice"
   },
   {
    "restaurant": "FOOD GARDEN",
-   "name": "Pečené dolné kuracie stehienka v BBQ marináde, pečené zemiaky, Coleslaw",
-   "weight": "240g",
+   "name": "Vyprážaný kurací Cordon Bleu, čerstvá zelenina",
+   "weight": "150g",
    "category": "Denné menu",
    "price": "8.40€",
    "protein_g": 35,
-   "kcal": 600,
-   "reason": "BBQ chicken legs, potatoes, coleslaw"
+   "kcal": 450,
+   "reason": "Chicken cordon bleu with vegetables"
+  },
+  {
+   "restaurant": "UMAMI",
+   "name": "Šalát s grilovanými kuracími prsiami a pestom 🥓🥗🍖 (cherry paradajky, grilovaná slanina a pesto majonéza)",
+   "weight": "",
+   "category": "Šaláty samostatne",
+   "price": "8.40 €",
+   "protein_g": 35,
+   "kcal": 500,
+   "reason": "Chicken salad with pesto"
   },
   {
    "restaurant": "FAJNE JEDLO",
-   "name": "Kuracie červené karí s cícerom a zeleninou, basmati ryža",
+   "name": "Špenátové lasagne s kuracím mäsom a ricottou, paradajkové sugo",
    "weight": "",
    "category": "Hlavne jedlo",
    "price": "",
    "protein_g": 30,
    "kcal": 500,
-   "reason": "Chicken curry with chickpeas, rice"
+   "reason": "Spinach lasagna with chicken and ricotta"
   },
   {
    "restaurant": "FAJNE JEDLO",
@@ -161,28 +211,28 @@
    "category": "Exkluzív",
    "price": "",
    "protein_g": 30,
-   "kcal": 600,
-   "reason": "Chicken wrap, cheddar, fries"
+   "kcal": 700,
+   "reason": "Chicken wrap with cheddar and fries"
   },
   {
-   "restaurant": "MESTIANSKY PIVOVAR",
-   "name": "Kuracie prsia tikka masala /jogurt, koriander, limetka/ ryža",
-   "weight": "180 g",
-   "category": "Utorok",
-   "price": "10.50 €",
+   "restaurant": "KOLKOVNA",
+   "name": "Bravčové na hrášku s varenými zemiakmi 150 g",
+   "weight": "150 g",
+   "category": "Jedlo dňa č.1",
+   "price": "",
    "protein_g": 30,
-   "kcal": 450,
-   "reason": "Chicken tikka masala, rice"
+   "kcal": 400,
+   "reason": "Pork with peas and boiled potatoes"
   },
   {
    "restaurant": "FOOD GARDEN",
-   "name": "Vyprážaný kurací Cordon Bleu, čerstvá zelenina",
+   "name": "Bravčové ragú na hrášku, kolienka",
    "weight": "150g",
    "category": "Denné menu",
    "price": "8.40€",
    "protein_g": 30,
    "kcal": 450,
-   "reason": "Chicken cordon bleu, fresh vegetables"
+   "reason": "Pork ragout with pasta"
   },
   {
    "restaurant": "OTTO",
@@ -195,16 +245,6 @@
    "reason": "Chicken curry with dumplings"
   },
   {
-   "restaurant": "UMAMI",
-   "name": "Šalát s grilovanými kuracími prsiami a pestom 🥓🥗🍖 (cherry paradajky, grilovaná slanina a pesto majonéza)",
-   "weight": "",
-   "category": "Šaláty samostatne",
-   "price": "8.40 €",
-   "protein_g": 30,
-   "kcal": 400,
-   "reason": "Chicken salad with pesto"
-  },
-  {
    "restaurant": "MINT",
    "name": "(paradajková omáčka, mozzarella fior di latte, BBQ,, vajíčko, listový šalát s citrónovo-medovým dresingom)",
    "weight": "380 g | 100 g",
@@ -212,27 +252,17 @@
    "price": "9.90 €",
    "protein_g": 25,
    "kcal": 500,
-   "reason": "Mozzarella, BBQ, egg, salad"
-  },
-  {
-   "restaurant": "FAJNE JEDLO",
-   "name": "Špenátové lasagne s kuracím mäsom a ricottou, paradajkové sugo",
-   "weight": "",
-   "category": "Hlavne jedlo",
-   "price": "",
-   "protein_g": 25,
-   "kcal": 450,
-   "reason": "Spinach lasagna, chicken, ricotta"
+   "reason": "Mozzarella and BBQ with salad"
   },
   {
    "restaurant": "KOLKOVNA",
-   "name": "Bravčové na hrášku s varenými zemiakmi 150 g",
-   "weight": "150 g",
-   "category": "Jedlo dňa č.1",
+   "name": "Lososová štrúdla s listovým šalátom 200 g",
+   "weight": "200 g",
+   "category": "Jedlo dňa č.2",
    "price": "",
    "protein_g": 25,
-   "kcal": 400,
-   "reason": "Pork with peas, boiled potatoes"
+   "kcal": 350,
+   "reason": "Salmon strudel with salad"
   },
   {
    "restaurant": "ST.GERMAIN",
@@ -241,28 +271,8 @@
    "category": "",
    "price": "10,99 €",
    "protein_g": 25,
-   "kcal": 500,
+   "kcal": 450,
    "reason": "Caesar wrap with chicken"
-  },
-  {
-   "restaurant": "FOOD GARDEN",
-   "name": "Bravčové ragú na hrášku, kolienka",
-   "weight": "150g",
-   "category": "Denné menu",
-   "price": "8.40€",
-   "protein_g": 25,
-   "kcal": 400,
-   "reason": "Pork ragout, pasta"
-  },
-  {
-   "restaurant": "PICKNICK",
-   "name": "Zeleninový bulgur, halloumi",
-   "weight": "",
-   "category": "Menu 2",
-   "price": "6,90 €",
-   "protein_g": 20,
-   "kcal": 400,
-   "reason": "Vegetable bulgur and halloumi"
   },
   {
    "restaurant": "MINT",
@@ -275,14 +285,14 @@
    "reason": "Pasta salad with fried halloumi"
   },
   {
-   "restaurant": "KOLKOVNA",
-   "name": "Lososová štrúdla s listovým šalátom 200 g",
-   "weight": "200 g",
-   "category": "Jedlo dňa č.2",
+   "restaurant": "WERK",
+   "name": "cobb šalát s pečenými zemiakmi, cherry paradajky, rímsky list, feta syr,vajce, avokádový dressing",
+   "weight": "350 g",
+   "category": "MEALS",
    "price": "",
    "protein_g": 20,
-   "kcal": 350,
-   "reason": "Salmon strudel, salad"
+   "kcal": 400,
+   "reason": "Cobb salad with feta and egg"
   },
   {
    "restaurant": "NOSTALGIA",
@@ -292,7 +302,7 @@
    "price": "",
    "protein_g": 20,
    "kcal": 450,
-   "reason": "Mushroom paprikash, dumplings"
+   "reason": "Mushroom paprikash with dumplings"
   },
   {
    "restaurant": "MESTIANSKY PIVOVAR",
@@ -301,8 +311,8 @@
    "category": "Utorok",
    "price": "9.90 €",
    "protein_g": 20,
-   "kcal": 400,
-   "reason": "Penne, mushrooms, broccoli, cheese"
+   "kcal": 450,
+   "reason": "Baked penne with vegetables and cheese"
   },
   {
    "restaurant": "OTTO",
@@ -312,7 +322,7 @@
    "price": "",
    "protein_g": 20,
    "kcal": 350,
-   "reason": "Tabbouleh with halloumi"
+   "reason": "Tabbouleh with grilled halloumi"
   },
   {
    "restaurant": "UMAMI",
@@ -321,8 +331,8 @@
    "category": "Šaláty samostatne",
    "price": "8.40 €",
    "protein_g": 20,
-   "kcal": 350,
-   "reason": "Prosciutto and melon salad"
+   "kcal": 400,
+   "reason": "Salad with prosciutto and melon"
   },
   {
    "restaurant": "UMAMI",
@@ -331,18 +341,18 @@
    "category": "MENU - hlavné jedlá a šaláty s polievkou",
    "price": "8.90 €",
    "protein_g": 20,
-   "kcal": 350,
-   "reason": "Prosciutto and melon salad"
+   "kcal": 400,
+   "reason": "Salad with prosciutto and melon"
   },
   {
    "restaurant": "PICKNICK",
-   "name": "Listový šalát s ovocím a orechmi, balkánsky syr",
+   "name": "Zeleninový bulgur, halloumi",
    "weight": "",
-   "category": "Špeciál 1",
-   "price": "8,90 €",
+   "category": "Menu 2",
+   "price": "6,90 €",
    "protein_g": 15,
-   "kcal": 250,
-   "reason": "Salad with fruit, nuts, Balkan cheese"
+   "kcal": 350,
+   "reason": "Vegetable bulgur with halloumi cheese"
   },
   {
    "restaurant": "MINT",
@@ -352,12 +362,12 @@
    "price": "",
    "protein_g": 15,
    "kcal": 250,
-   "reason": "Chicken, coconut milk, rice noodles"
+   "reason": "Chicken and coconut milk soup"
   },
   {
    "restaurant": "FAJNE JEDLO",
    "name": "Thajská s kuracím mäsom a kokosovým mliekom",
-   "weight": "0,33l",
+   "weight": "",
    "category": "Polievka",
    "price": "",
    "protein_g": 15,
@@ -371,8 +381,8 @@
    "category": "Hlavne jedlo",
    "price": "",
    "protein_g": 15,
-   "kcal": 400,
-   "reason": "Fried zucchini, potatoes, tartar sauce"
+   "kcal": 450,
+   "reason": "Fried zucchini with potatoes and tartar sauce"
   },
   {
    "restaurant": "DOCK7",
@@ -382,7 +392,7 @@
    "price": "10,90 €",
    "protein_g": 15,
    "kcal": 400,
-   "reason": "Pasta with tomato sauce, olives"
+   "reason": "Pasta with tomato sauce and olives"
   },
   {
    "restaurant": "KOLKOVNA",
@@ -392,7 +402,7 @@
    "price": "",
    "protein_g": 15,
    "kcal": 300,
-   "reason": "Salad, goat cheese, beetroot, bread"
+   "reason": "Salad with goat cheese and beetroot"
   },
   {
    "restaurant": "ST.GERMAIN",
@@ -402,7 +412,7 @@
    "price": "10,49 €",
    "protein_g": 15,
    "kcal": 350,
-   "reason": "Farm tartine, summer vegetables"
+   "reason": "Farm tartine with summer vegetables"
   },
   {
    "restaurant": "FOOD GARDEN",
@@ -411,7 +421,7 @@
    "category": "Denné menu",
    "price": "0.90€",
    "protein_g": 15,
-   "kcal": 200,
+   "kcal": 250,
    "reason": "Goulash soup"
   },
   {
@@ -422,7 +432,7 @@
    "price": "8.40€",
    "protein_g": 15,
    "kcal": 350,
-   "reason": "Bulgur salad, egg, pomegranate"
+   "reason": "Bulgur salad with egg and pomegranate"
   },
   {
    "restaurant": "UMAMI",
@@ -431,8 +441,8 @@
    "category": "MENU - hlavné jedlá a šaláty s polievkou",
    "price": "7.90 €",
    "protein_g": 15,
-   "kcal": 400,
-   "reason": "Fried cauliflower, potatoes, tartar sauce"
+   "kcal": 450,
+   "reason": "Fried cauliflower with potatoes"
   },
   {
    "restaurant": "UMAMI",
@@ -441,8 +451,18 @@
    "category": "Šaláty samostatne",
    "price": "8.40 €",
    "protein_g": 15,
-   "kcal": 300,
-   "reason": "Goat cheese salad with beetroot"
+   "kcal": 350,
+   "reason": "Salad with goat cheese and nuts"
+  },
+  {
+   "restaurant": "PICKNICK",
+   "name": "Listový šalát s ovocím a orechmi, balkánsky syr",
+   "weight": "",
+   "category": "Špeciál 1",
+   "price": "8,90 €",
+   "protein_g": 12,
+   "kcal": 250,
+   "reason": "Salad with fruit, nuts, and Balkan cheese"
   },
   {
    "restaurant": "PICKNICK",
@@ -482,7 +502,7 @@
    "price": "2.00 €",
    "protein_g": 10,
    "kcal": 150,
-   "reason": "Red lentil soup with turmeric"
+   "reason": "Lentil soup with turmeric"
   },
   {
    "restaurant": "UMAMI",
@@ -502,7 +522,7 @@
    "price": "",
    "protein_g": 8,
    "kcal": 150,
-   "reason": "Lentil soup, moderate protein"
+   "reason": "Lentil soup, moderate protein and calories"
   },
   {
    "restaurant": "DOCK7",
@@ -555,24 +575,14 @@
    "reason": "Tomato soup with parmesan"
   },
   {
-   "restaurant": "FAJNE JEDLO",
-   "name": "Cuketový krém so smotanou a čerstvým tymiánom",
-   "weight": "0,33l",
-   "category": "Polievka",
+   "restaurant": "WERK",
+   "name": "krém z červenej šošovice, jablká, zázvor, pečené paradajky, koriander",
+   "weight": "0,25l",
+   "category": "SOUP",
    "price": "",
-   "protein_g": 5,
+   "protein_g": 6,
    "kcal": 120,
-   "reason": "Zucchini cream soup with thyme"
-  },
-  {
-   "restaurant": "KOLKOVNA",
-   "name": "Jarná zeleninová polievka 0,33 l",
-   "weight": "0,33 l",
-   "category": "Denná polievka",
-   "price": "",
-   "protein_g": 5,
-   "kcal": 120,
-   "reason": "Spring vegetable soup"
+   "reason": "Lentil soup with apple and ginger"
   },
   {
    "restaurant": "NOSTALGIA",
@@ -595,6 +605,16 @@
    "reason": "Broccoli cream soup"
   },
   {
+   "restaurant": "FAJNE JEDLO",
+   "name": "Cuketový krém so smotanou a čerstvým tymiánom",
+   "weight": "",
+   "category": "Polievka",
+   "price": "",
+   "protein_g": 3,
+   "kcal": 100,
+   "reason": "Zucchini cream soup with thyme"
+  },
+  {
    "restaurant": "PICKNICK",
    "name": "Mrkvová",
    "weight": "",
@@ -603,10 +623,19 @@
    "protein_g": 2,
    "kcal": 50,
    "reason": "Carrot soup, low protein and calories"
+  },
+  {
+   "restaurant": "KOLKOVNA",
+   "name": "Jarná zeleninová polievka 0,33 l",
+   "weight": "0,33 l",
+   "category": "Denná polievka",
+   "price": "",
+   "protein_g": 2,
+   "kcal": 80,
+   "reason": "Spring vegetable soup"
   }
  ],
  "warnings": [
-  "WERK: no dishes found for Utorok",
   "SESTKA: still shows STREDA 1. 7. 2026"
  ]
 }
