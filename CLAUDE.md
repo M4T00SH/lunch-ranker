@@ -23,10 +23,19 @@ involved in production.
 - Debug bad parses: `logs/run-YYYY-MM-DD.log` has the raw dish list per
   restaurant.
 
-- Schedule: 10:45 + 11:30 local year-round via 4 UTC crons + dst-guard job
-  (see workflow). PENDING as of 2026-07-06: no scheduled run has ever fired
-  (GitHub quirk; workflow re-pushed as fix) — confirm a run appears on
-  2026-07-07 ~10:45-11:05, else escalate to a sturdier trigger.
+- Schedule: GitHub's cron scheduler is DEAD for this repo — zero scheduled
+  runs ever fired (confirmed 2026-07-07 with same-day test crons). Ruled out:
+  fork/default-branch/workflow-state, unlinked commit email, platform
+  incident. Tried without success: re-push, disable/enable cycle, file rename
+  (update-menus.yml → daily-refresh.yml). The 4 UTC crons + dst-guard stay in
+  the workflow as a free backup, but the real trigger is external:
+  cron-job.org calls the workflow_dispatch API at 10:45 + 11:30
+  Europe/Bratislava Mon-Fri using a fine-grained PAT (Actions: read+write,
+  this repo only). PAT expires — renew yearly. Setup PENDING as of
+  2026-07-07: user needs to create the PAT + cron-job.org jobs.
+- WERK markup change 2026-07: dish rows are .smartlunch-wrap (no longer
+  .smartlunch-days) and ALL carry smartlunch-monday regardless of real day —
+  adapter assigns days by header-row order, never by weekday class.
 
 ## Verify changes
 
