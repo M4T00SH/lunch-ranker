@@ -29,10 +29,12 @@ involved in production.
   incident. Tried without success: re-push, disable/enable cycle, file rename
   (update-menus.yml → daily-refresh.yml). The 4 UTC crons + dst-guard stay in
   the workflow as a free backup, but the real trigger is external:
-  cron-job.org calls the workflow_dispatch API at 10:45 + 11:30
-  Europe/Bratislava Mon-Fri using a fine-grained PAT (Actions: read+write,
-  this repo only). PAT expires — renew yearly. Setup PENDING as of
-  2026-07-07: user needs to create the PAT + cron-job.org jobs.
+  cron-job.org (user's account, jobs 8031253 + 8031261) calls the
+  workflow_dispatch API at 10:45 + 11:30 Europe/Bratislava Mon-Fri using a
+  fine-grained PAT "lunch-ranker-cron" (Actions: read+write, this repo only,
+  no expiration). Set up + end-to-end verified 2026-07-07; first live proof
+  expected 2026-07-08 10:45. cron-job.org handles DST (timezone-aware), so
+  the dst-guard only matters for the backup GitHub crons.
 - WERK markup change 2026-07: dish rows are .smartlunch-wrap (no longer
   .smartlunch-days) and ALL carry smartlunch-monday regardless of real day —
   adapter assigns days by header-row order, never by weekday class.
