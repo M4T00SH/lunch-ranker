@@ -10,6 +10,7 @@ on:
     - cron: "45 9 * * 1-5"   # 11:45 in summer        / 10:45 in winter
     - cron: "30 9 * * 1-5"   # 11:30 in summer        / 10:30 in winter
     - cron: "30 10 * * 1-5"  # 12:30 in summer        / 11:30 in winter
+    - cron: "50 11 * * *"    # TEMP scheduler-alive test 2026-07-07; dst-guard skips it; remove after
   workflow_dispatch:
 
 permissions:
