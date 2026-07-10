@@ -1,7 +1,7 @@
 {
  "date": "2026-07-10",
  "day_label": "Piatok 10.07.2026",
- "generated_at": "10:45",
+ "generated_at": "11:31",
  "method": "keyword table (rough fallback)",
  "dishes": [
   {
@@ -176,7 +176,7 @@
   },
   {
    "restaurant": "FAJNE JEDLO",
-   "name": "Chimichangas s hovädzím trhaným mäsom, fazuľová pyré, paradajková salsa, syr, šalát",
+   "name": "Chimichangas hovädzím trhaným mäsom, fazuľová ryža, paradajková salsa, syr, šalát",
    "weight": "",
    "category": "Hlavne jedlo",
    "price": "",
