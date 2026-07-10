@@ -1,7 +1,7 @@
 {
  "date": "2026-07-10",
  "day_label": "Piatok 10.07.2026",
- "generated_at": "16:31",
+ "generated_at": "16:43",
  "method": "AI (GPT-4o via GitHub Models)",
  "dishes": [
   {
@@ -12,7 +12,17 @@
    "price": "12,90 €",
    "protein_g": 40,
    "kcal": 600,
-   "reason": "Slow-cooked beef, potatoes rich meal"
+   "reason": "Slow-cooked beef with potatoes rich meal"
+  },
+  {
+   "restaurant": "WERK",
+   "name": "soba rezance s hovädzou sviečkovicou, mrkva, cuketa, med, sezam, arašidy",
+   "weight": "350 g",
+   "category": "",
+   "price": "",
+   "protein_g": 40,
+   "kcal": 600,
+   "reason": "Beef with soba noodles filling meal"
   },
   {
    "restaurant": "PICKNICK",
@@ -22,7 +32,7 @@
    "price": "8,90 €",
    "protein_g": 35,
    "kcal": 550,
-   "reason": "Beef steak and rice high protein"
+   "reason": "Beef steak with rice high protein meal"
   },
   {
    "restaurant": "FAJNE JEDLO",
@@ -32,17 +42,7 @@
    "price": "",
    "protein_g": 35,
    "kcal": 550,
-   "reason": "Chicken steak, carrots, rice balanced meal"
-  },
-  {
-   "restaurant": "WERK",
-   "name": "soba rezance s hovädzou sviečkovicou, mrkva, cuketa, med, sezam, arašidy",
-   "weight": "350 g",
-   "category": "",
-   "price": "",
-   "protein_g": 35,
-   "kcal": 600,
-   "reason": "Beef with soba noodles hearty meal"
+   "reason": "Chicken steak with rice balanced meal"
   },
   {
    "restaurant": "NOSTALGIA",
@@ -52,7 +52,7 @@
    "price": "",
    "protein_g": 35,
    "kcal": 550,
-   "reason": "Caesar salad with chicken and egg balanced meal"
+   "reason": "Caesar salad with chicken and egg"
   },
   {
    "restaurant": "NOSTALGIA",
@@ -62,7 +62,7 @@
    "price": "",
    "protein_g": 35,
    "kcal": 700,
-   "reason": "Pulled pork, fries, cheese sauce hearty meal"
+   "reason": "Pulled pork with fries and coleslaw"
   },
   {
    "restaurant": "APOLKA",
@@ -72,7 +72,7 @@
    "price": "",
    "protein_g": 35,
    "kcal": 550,
-   "reason": "Veal schnitzel, potatoes, salad balanced meal"
+   "reason": "Veal schnitzel with potatoes and salad"
   },
   {
    "restaurant": "UMAMI",
@@ -82,7 +82,7 @@
    "price": "8.40 €",
    "protein_g": 35,
    "kcal": 550,
-   "reason": "Fish filet, pea mash balanced meal"
+   "reason": "Fish with pea puree and citrus sauce"
   },
   {
    "restaurant": "FAJNE JEDLO",
@@ -92,7 +92,7 @@
    "price": "",
    "protein_g": 30,
    "kcal": 600,
-   "reason": "Beef chimichangas, beans, cheese hearty meal"
+   "reason": "Beef chimichangas with beans and cheese"
   },
   {
    "restaurant": "FAJNE JEDLO",
@@ -102,7 +102,7 @@
    "price": "",
    "protein_g": 30,
    "kcal": 700,
-   "reason": "Pork schnitzel, fries rich and fried meal"
+   "reason": "Pork schnitzel with fries hearty meal"
   },
   {
    "restaurant": "NOSTALGIA",
@@ -112,7 +112,7 @@
    "price": "",
    "protein_g": 30,
    "kcal": 600,
-   "reason": "Fried schnitzel, potato salad rich meal"
+   "reason": "Fried schnitzel with potato salad"
   },
   {
    "restaurant": "MESTIANSKY PIVOVAR",
@@ -122,7 +122,7 @@
    "price": "10.50 €",
    "protein_g": 30,
    "kcal": 600,
-   "reason": "Fried schnitzel, potato salad rich meal"
+   "reason": "Fried pork schnitzel with potato salad"
   },
   {
    "restaurant": "ST.GERMAIN",
@@ -132,7 +132,7 @@
    "price": "10,99 €",
    "protein_g": 30,
    "kcal": 600,
-   "reason": "Club sandwich hearty meal"
+   "reason": "Club sandwich with meat and cheese"
   },
   {
    "restaurant": "FOOD GARDEN",
@@ -142,7 +142,7 @@
    "price": "8.40€",
    "protein_g": 30,
    "kcal": 500,
-   "reason": "Chicken ragout with bacon and rice hearty meal"
+   "reason": "Chicken ragout with bacon and rice"
   },
   {
    "restaurant": "OTTO",
@@ -152,7 +152,7 @@
    "price": "",
    "protein_g": 30,
    "kcal": 550,
-   "reason": "Chicken with cheese and peach balanced meal"
+   "reason": "Chicken with cheese and peach filling meal"
   },
   {
    "restaurant": "UMAMI",
@@ -162,7 +162,7 @@
    "price": "8.40 €",
    "protein_g": 30,
    "kcal": 450,
-   "reason": "Chicken salad with pesto hearty salad"
+   "reason": "Chicken salad with bacon and pesto dressing"
   },
   {
    "restaurant": "PICKNICK",
@@ -172,7 +172,7 @@
    "price": "12,90 €",
    "protein_g": 25,
    "kcal": 450,
-   "reason": "Meatloaf, potatoes, salad typical Slovak meal"
+   "reason": "Meatloaf, potatoes, salad typical Slovak lunch"
   },
   {
    "restaurant": "FAJNE JEDLO",
@@ -202,7 +202,7 @@
    "price": "10,99 €",
    "protein_g": 25,
    "kcal": 550,
-   "reason": "BBQ quesadilla moderate protein"
+   "reason": "BBQ quesadilla with cheese and meat"
   },
   {
    "restaurant": "FOOD GARDEN",
@@ -212,27 +212,7 @@
    "price": "8.40€",
    "protein_g": 25,
    "kcal": 450,
-   "reason": "Chicken ragout with vegetables moderate protein"
-  },
-  {
-   "restaurant": "UMAMI",
-   "name": "Huevos rancheros s ryžou a volským okom",
-   "weight": "350 g",
-   "category": "MENU - hlavné jedlá a šaláty s polievkou",
-   "price": "7.90 €",
-   "protein_g": 25,
-   "kcal": 500,
-   "reason": "Eggs with rice and salsa balanced meal"
-  },
-  {
-   "restaurant": "WERK",
-   "name": "pečený baklažán, beluga šošovica, kozí syr, hrozienka,mrkva, tahini dressing",
-   "weight": "300 g",
-   "category": "MEALS",
-   "price": "",
-   "protein_g": 20,
-   "kcal": 400,
-   "reason": "Eggplant, lentils, goat cheese vegetarian dish"
+   "reason": "Chicken ragout with bacon and vegetables"
   },
   {
    "restaurant": "NOSTALGIA",
@@ -242,7 +222,7 @@
    "price": "",
    "protein_g": 20,
    "kcal": 600,
-   "reason": "Fried smoked cheese, fries rich meal"
+   "reason": "Fried cheese with fries and sauce"
   },
   {
    "restaurant": "FOOD GARDEN",
@@ -251,8 +231,8 @@
    "category": "Denné menu",
    "price": "8.40€",
    "protein_g": 20,
-   "kcal": 550,
-   "reason": "Fried cheese, potatoes rich meal"
+   "kcal": 500,
+   "reason": "Fried cheese with potatoes and sauce"
   },
   {
    "restaurant": "OTTO",
@@ -261,8 +241,18 @@
    "category": "",
    "price": "",
    "protein_g": 20,
+   "kcal": 450,
+   "reason": "Vegetarian lasagna with cheese and vegetables"
+  },
+  {
+   "restaurant": "UMAMI",
+   "name": "Huevos rancheros s ryžou a volským okom",
+   "weight": "350 g",
+   "category": "MENU - hlavné jedlá a šaláty s polievkou",
+   "price": "7.90 €",
+   "protein_g": 20,
    "kcal": 500,
-   "reason": "Vegetarian lasagna moderate protein"
+   "reason": "Huevos rancheros with rice and egg"
   },
   {
    "restaurant": "UMAMI",
@@ -272,7 +262,7 @@
    "price": "8.40 €",
    "protein_g": 20,
    "kcal": 450,
-   "reason": "Prosciutto and melon salad light meal"
+   "reason": "Salad with prosciutto and melon"
   },
   {
    "restaurant": "PICKNICK",
@@ -282,7 +272,17 @@
    "price": "6,90 €",
    "protein_g": 15,
    "kcal": 400,
-   "reason": "Hummus, bryndza, potatoes moderate protein"
+   "reason": "Hummus, bryndza, potatoes moderate protein dish"
+  },
+  {
+   "restaurant": "WERK",
+   "name": "pečený baklažán, beluga šošovica, kozí syr, hrozienka,mrkva, tahini dressing",
+   "weight": "300 g",
+   "category": "MEALS",
+   "price": "",
+   "protein_g": 15,
+   "kcal": 350,
+   "reason": "Eggplant, lentils, goat cheese vegetarian dish"
   },
   {
    "restaurant": "KOLKOVNA",
@@ -292,7 +292,7 @@
    "price": "",
    "protein_g": 15,
    "kcal": 400,
-   "reason": "Potato stew with sausage moderate protein"
+   "reason": "Potato stew with sausage moderate protein meal"
   },
   {
    "restaurant": "FOOD GARDEN",
@@ -302,7 +302,7 @@
    "price": "8.40€",
    "protein_g": 15,
    "kcal": 400,
-   "reason": "French potatoes with pickles moderate meal"
+   "reason": "French potatoes with pickles traditional dish"
   },
   {
    "restaurant": "UMAMI",
@@ -312,7 +312,7 @@
    "price": "8.40 €",
    "protein_g": 15,
    "kcal": 400,
-   "reason": "Goat cheese salad light meal"
+   "reason": "Salad with goat cheese and nuts"
   },
   {
    "restaurant": "PICKNICK",
@@ -342,7 +342,7 @@
    "price": "10,90 €",
    "protein_g": 10,
    "kcal": 300,
-   "reason": "Tomato arancini, salad low protein"
+   "reason": "Tomato arancini, salad low protein dish"
   },
   {
    "restaurant": "FAJNE JEDLO",
@@ -352,7 +352,7 @@
    "price": "",
    "protein_g": 10,
    "kcal": 450,
-   "reason": "Sweet dumplings low protein, high carbs"
+   "reason": "Sweet potato dumplings dessert-like dish"
   },
   {
    "restaurant": "NOSTALGIA",
@@ -362,7 +362,7 @@
    "price": "",
    "protein_g": 10,
    "kcal": 450,
-   "reason": "Sweet steamed buns low protein, high carbs"
+   "reason": "Sweet steamed buns dessert-like dish"
   },
   {
    "restaurant": "MESTIANSKY PIVOVAR",
@@ -372,7 +372,7 @@
    "price": "9.90 €",
    "protein_g": 10,
    "kcal": 400,
-   "reason": "Rice pudding with mango sweet dish"
+   "reason": "Rice pudding with mango dessert-like dish"
   },
   {
    "restaurant": "FOOD GARDEN",
@@ -382,7 +382,7 @@
    "price": "7.90€",
    "protein_g": 10,
    "kcal": 450,
-   "reason": "Sweet steamed buns low protein, high carbs"
+   "reason": "Steamed buns with sweet topping dessert-like dish"
   }
  ],
  "warnings": [
