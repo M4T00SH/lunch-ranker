@@ -1,138 +1,18 @@
 {
  "date": "2026-07-10",
  "day_label": "Piatok 10.07.2026",
- "generated_at": "14:13",
- "method": "keyword table (rough fallback)",
+ "generated_at": "16:25",
+ "method": "AI (GPT-4o via GitHub Models)",
  "dishes": [
   {
-   "restaurant": "ST.GERMAIN",
-   "name": "Morčací burger s modrým syrom a hruškovým chutney",
-   "weight": "350 g",
-   "category": "",
-   "price": "14,99 €",
-   "protein_g": 90,
-   "kcal": 825,
-   "reason": "'morcaci' ~350 g + sides, keyword table"
-  },
-  {
-   "restaurant": "MINT",
-   "name": "grilovaný kurací steak s risotto bianco (ryža arborio, grilované plátky cukety,, chimichurri, grana padano syr, mikrobylinky)",
-   "weight": "350 g | 150 g",
-   "category": "",
-   "price": "12.50 €",
-   "protein_g": 86,
-   "kcal": 878,
-   "reason": "'kuraci' ~350 g + sides, keyword table"
-  },
-  {
-   "restaurant": "UMAMI",
-   "name": "Šalát s grilovanými kuracími prsiami a pestom 🥓🥗🍖 (cherry paradajky, grilovaná slanina a pesto majonéza)",
-   "weight": "350 g",
-   "category": "Šaláty samostnatne",
-   "price": "8.40 €",
-   "protein_g": 86,
-   "kcal": 878,
-   "reason": "'kuraci' ~350 g + sides, keyword table"
-  },
-  {
-   "restaurant": "DOCK7",
-   "name": "Pita tahini 370 g (baklažán, cuketa, papriky, feta syr, tahini jogurt,)",
-   "weight": "370 g",
-   "category": "",
-   "price": "10,90 €",
-   "protein_g": 80,
-   "kcal": 1410,
-   "reason": "'syr' ~370 g + sides, keyword table"
-  },
-  {
-   "restaurant": "UMAMI",
-   "name": "Šalát s kozím syrom 2.0 (grilovaná cvikla, karamelizované vlašské orechy, horčicový dressing, krémové balsamico, med)",
-   "weight": "350 g",
-   "category": "Šaláty samostnatne",
-   "price": "8.40 €",
-   "protein_g": 76,
-   "kcal": 1350,
-   "reason": "'syr' ~350 g + sides, keyword table"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "St.G Pastrami sendvič",
-   "weight": "300 g",
-   "category": "",
-   "price": "17,99 €",
-   "protein_g": 72,
-   "kcal": 750,
-   "reason": "'pastrami' ~300 g + sides, keyword table"
-  },
-  {
-   "restaurant": "UMAMI",
-   "name": "Šalát s prosciuttom a melónom cantaloupe (s plátkami prosciutto crudo, paradajkami, baby mozzarellou, pistáciami, broskyňami a malinovým vinaigrette)",
-   "weight": "350 g",
-   "category": "Šaláty samostnatne",
-   "price": "8.40 €",
-   "protein_g": 69,
-   "kcal": 1175,
-   "reason": "'mozzarell' ~350 g + sides, keyword table"
-  },
-  {
-   "restaurant": "WERK",
-   "name": "pečený baklažán, beluga šošovica, kozí syr, hrozienka,mrkva, tahini dressing",
-   "weight": "300 g",
-   "category": "MEALS",
-   "price": "",
-   "protein_g": 66,
-   "kcal": 1200,
-   "reason": "'syr' ~300 g + sides, keyword table"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Rozpečený kozí syr",
-   "weight": "270 g",
-   "category": "",
-   "price": "13,49 €",
-   "protein_g": 60,
-   "kcal": 1110,
-   "reason": "'syr' ~270 g + sides, keyword table"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Rozpečený kozí syr",
-   "weight": "270 g",
-   "category": "",
-   "price": "14,49 €",
-   "protein_g": 60,
-   "kcal": 1110,
-   "reason": "'syr' ~270 g + sides, keyword table"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Miešané vajcia na kváskovom chlebíku s údeným lososom",
-   "weight": "250 g",
-   "category": "",
-   "price": "10,99 €",
-   "protein_g": 56,
-   "kcal": 800,
-   "reason": "'losos' ~250 g + sides, keyword table"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Pečené zemiakové lupienky so syrom Grana Padano a rozmarínom",
-   "weight": "250 g",
-   "category": "",
-   "price": "6,99 €",
-   "protein_g": 56,
-   "kcal": 1050,
-   "reason": "'syr' ~250 g + sides, keyword table"
-  },
-  {
-   "restaurant": "NOSTALGIA",
-   "name": "II. Caesar šalát (kuracie prsia na grile, rímsky šalát, varené vajce, caesar dresing, krutóny, parmezán) 400g + polievka",
-   "weight": "400g",
-   "category": "Hlavné jedlo",
-   "price": "",
-   "protein_g": 46,
-   "kcal": 330,
-   "reason": "soup ~400 ml, keyword table"
+   "restaurant": "PICKNICK",
+   "name": "Pomaly pečený hovädzí krk, zemiakové pavé, pfeffer omáčka",
+   "weight": "",
+   "category": "Špeciál 2",
+   "price": "12,90 €",
+   "protein_g": 40,
+   "kcal": 600,
+   "reason": "Slow-cooked beef, potatoes, rich protein"
   },
   {
    "restaurant": "PICKNICK",
@@ -140,169 +20,19 @@
    "weight": "",
    "category": "Menu 1",
    "price": "8,90 €",
-   "protein_g": 45,
-   "kcal": 630,
-   "reason": "'hovadzi' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "PICKNICK",
-   "name": "Pomaly pečený hovädzí krk, zemiakové pavé, pfeffer omáčka",
-   "weight": "",
-   "category": "Špeciál 2",
-   "price": "12,90 €",
-   "protein_g": 45,
-   "kcal": 630,
-   "reason": "'hovadzi' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "FAJNE JEDLO",
-   "name": "Chimichangas hovädzím trhaným mäsom, fazuľa, ryža, paradajková salsa, syr, šalát",
-   "weight": "",
-   "category": "Hlavne jedlo",
-   "price": "",
-   "protein_g": 45,
-   "kcal": 630,
-   "reason": "'hovadzi' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "KOLKOVNA",
-   "name": "Zemiakový prívarok s klobásou a chlebom 250 g",
-   "weight": "250 g",
-   "category": "Jedlo dňa č.2",
-   "price": "",
-   "protein_g": 44,
-   "kcal": 1100,
-   "reason": "'klobas' ~250 g + sides, keyword table"
-  },
-  {
-   "restaurant": "FOOD GARDEN",
-   "name": "Hovädzí vývar so zeleninou a rezancami",
-   "weight": "0,33l",
-   "category": "Denné menu",
-   "price": "0.70€",
-   "protein_g": 43,
-   "kcal": 363,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "FAJNE JEDLO",
-   "name": "Kurací steak na bylinkách, karamelizovaná baby karotka na masle, ryža",
-   "weight": "",
-   "category": "Hlavne jedlo",
-   "price": "",
-   "protein_g": 40,
-   "kcal": 548,
-   "reason": "'kuraci' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "FOOD GARDEN",
-   "name": "Kuracie ragú sedliacke (slanina, klobása), ryža",
-   "weight": "150g",
-   "category": "Denné menu",
-   "price": "8.40€",
-   "protein_g": 40,
-   "kcal": 548,
-   "reason": "'kuraci' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "FOOD GARDEN",
-   "name": "Kuracie ragú sedliacke (slanina, klobása), čerstvá zelenina",
-   "weight": "150g",
-   "category": "Denné menu",
-   "price": "8.40€",
-   "protein_g": 40,
-   "kcal": 548,
-   "reason": "'kuraci' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "OTTO",
-   "name": "Kuracie prsia zapečené so syrom a broskyňou, ryža",
-   "weight": "",
-   "category": "",
-   "price": "",
-   "protein_g": 40,
-   "kcal": 548,
-   "reason": "'kuraci' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "FAJNE JEDLO",
-   "name": "Bravčový perkelt, halušky",
-   "weight": "",
-   "category": "Hlavne jedlo",
-   "price": "",
-   "protein_g": 39,
-   "kcal": 675,
-   "reason": "'bravcov' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "FAJNE JEDLO",
-   "name": "Bravčový Wiener Schnitzel, steakové hranolky, sriracha majonéza",
-   "weight": "",
-   "category": "Exkluzív",
-   "price": "",
-   "protein_g": 39,
-   "kcal": 675,
-   "reason": "'bravcov' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "MESTIANSKY PIVOVAR",
-   "name": "Vyprážaný bravčový rezeň, zemiakový šalát",
-   "weight": "150 g",
-   "category": "Piatok",
-   "price": "10.50 €",
-   "protein_g": 39,
-   "kcal": 675,
-   "reason": "'bravcov' ~150 g + sides, keyword table"
+   "protein_g": 35,
+   "kcal": 550,
+   "reason": "Beef steak, rice, high protein"
   },
   {
    "restaurant": "NOSTALGIA",
-   "name": "IV. Vyprážaný kurací / bravčový rezeň, viedenský zemiakový šalát 140/250 + polievka",
-   "weight": "",
+   "name": "II. Caesar šalát (kuracie prsia na grile, rímsky šalát, varené vajce, caesar dresing, krutóny, parmezán) 400g + polievka",
+   "weight": "400g",
    "category": "Hlavné jedlo",
    "price": "",
-   "protein_g": 38,
-   "kcal": 272,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "OTTO",
-   "name": "Kurací vývar",
-   "weight": "",
-   "category": "Polievka",
-   "price": "",
-   "protein_g": 38,
-   "kcal": 272,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "PICKNICK",
-   "name": "Listový šalát s ovocím a orechmi, balkánsky syr",
-   "weight": "",
-   "category": "Špeciál 1",
-   "price": "8,90 €",
-   "protein_g": 36,
-   "kcal": 750,
-   "reason": "'syr' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "FAJNE JEDLO",
-   "name": "Boršč s bravčovým mäsom a kyslou smotanou",
-   "weight": "0,33l",
-   "category": "Polievka",
-   "price": "",
-   "protein_g": 36,
-   "kcal": 412,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "KOLKOVNA",
-   "name": "Zmes listových šalátov, grilovaný kozí syr a cvikla, cesnaková bageta",
-   "weight": "",
-   "category": "Jedlo dňa č.3",
-   "price": "",
-   "protein_g": 36,
-   "kcal": 750,
-   "reason": "'syr' ~150 g + sides, keyword table"
+   "protein_g": 35,
+   "kcal": 450,
+   "reason": "Chicken Caesar salad, high protein"
   },
   {
    "restaurant": "NOSTALGIA",
@@ -310,109 +40,19 @@
    "weight": "",
    "category": "Hlavné jedlo",
    "price": "",
-   "protein_g": 36,
-   "kcal": 412,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "APOLKA",
-   "name": "Teľací rezeň v panko strúhanke, mladé zemiaky na masle s pažítkou,uhorkový šalát",
-   "weight": "",
-   "category": "Hlavné Jedlo",
-   "price": "",
-   "protein_g": 34,
-   "kcal": 720,
-   "reason": "'rezen' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "NOSTALGIA",
-   "name": "I. Vyprážaný údený syr, hranolky, domáca tatárska omáčka 140/200/30 + polievka",
-   "weight": "",
-   "category": "Hlavné jedlo",
-   "price": "",
-   "protein_g": 33,
-   "kcal": 495,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "UMAMI",
-   "name": "Letná cuketová s cícerom a tymiánom",
-   "weight": "0,33 l",
-   "category": "Polievky samostatne",
-   "price": "2.00 €",
-   "protein_g": 32,
-   "kcal": 729,
-   "reason": "'cicer' ~330 g + sides, keyword table"
-  },
-  {
-   "restaurant": "MINT",
-   "name": "thajská kokosová polievka (kuracie prsia, kokosové mlieko, čili, limetka, zázvor,, galangal, kafírové listy, hnedé šampiňóny, ryžové reza)",
-   "weight": "0,25 l",
-   "category": "Polievka týždňa",
-   "price": "",
-   "protein_g": 29,
-   "kcal": 206,
-   "reason": "soup ~250 ml, keyword table"
-  },
-  {
-   "restaurant": "PICKNICK",
-   "name": "Hummus, bryndza, baby zemiaky, nakladaná reďkovka",
-   "weight": "",
-   "category": "Menu 2",
-   "price": "6,90 €",
-   "protein_g": 28,
-   "kcal": 690,
-   "reason": "'bryndza' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Paradajková polievka s mozzarellou a focacciou",
-   "weight": "300 ml",
-   "category": "",
-   "price": "4,99 €",
-   "protein_g": 27,
-   "kcal": 375,
-   "reason": "soup ~300 ml, keyword table"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Olivová miska s artičokmi, sušenými paradajkami a mozzarellou",
-   "weight": "100 g",
-   "category": "",
-   "price": "4,49 €",
-   "protein_g": 24,
-   "kcal": 550,
-   "reason": "'mozzarell' ~100 g + sides, keyword table"
+   "protein_g": 35,
+   "kcal": 700,
+   "reason": "Pulled pork, fries, cheese sauce"
   },
   {
    "restaurant": "OTTO",
-   "name": "Lasagne melanzana",
+   "name": "Kuracie prsia zapečené so syrom a broskyňou, ryža",
    "weight": "",
    "category": "",
    "price": "",
-   "protein_g": 18,
-   "kcal": 540,
-   "reason": "'lasagne' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Flambované palacinky na pomarančovo-mandľovom masle",
-   "weight": "180 g",
-   "category": "",
-   "price": "12,99 €",
-   "protein_g": 17,
-   "kcal": 696,
-   "reason": "'palacink' ~180 g + sides, keyword table"
-  },
-  {
-   "restaurant": "DOCK7",
-   "name": "BBQ mäsové guľky 380 g | 150 g (bataty, asia coleslaw, uhorky, sezamový olej, zázvor, koriander)",
-   "weight": "380 g | 150 g",
-   "category": "",
-   "price": "13,90 €",
-   "protein_g": 15,
+   "protein_g": 35,
    "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
+   "reason": "Chicken with cheese and rice"
   },
   {
    "restaurant": "WERK",
@@ -420,1039 +60,39 @@
    "weight": "350 g",
    "category": "",
    "price": "",
-   "protein_g": 15,
+   "protein_g": 30,
    "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "KOLKOVNA",
-   "name": "Španielsky vtáčik s tarhoňou 150 g",
-   "weight": "150 g",
-   "category": "Jedlo dňa č.1",
-   "price": "",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "MESTIANSKY PIVOVAR",
-   "name": "Ryžový nákyp s mangom, hrozienka, kompót",
-   "weight": "320 g",
-   "category": "Piatok",
-   "price": "9.90 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "BBQ Quesadilla",
-   "weight": "280 g",
-   "category": "",
-   "price": "10,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Club sendvič",
-   "weight": "400 g",
-   "category": "",
-   "price": "10,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Viennoiserie – maslové raňajkové pečivo z našej pekárne",
-   "weight": "90g",
-   "category": "",
-   "price": "",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Ranný koktail s datlami a banánom",
-   "weight": "350 ml",
-   "category": "",
-   "price": "5,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Francúzske raňajkové menu",
-   "weight": "150 g",
-   "category": "",
-   "price": "9,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Zapečený Croissant v Anglickom kréme",
-   "weight": "300 g",
-   "category": "",
-   "price": "9,99 €",
-   "protein_g": 15,
-   "kcal": 510,
-   "reason": "'krem' ~300 g + sides, keyword table"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Raňajkový sendvič",
-   "weight": "300 g",
-   "category": "",
-   "price": "10,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Biely jogurt s domácou medovou granolou",
-   "weight": "225 g",
-   "category": "",
-   "price": "4,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Pistáciová šľahaná Feta s malinovým medom",
-   "weight": "180 g",
-   "category": "",
-   "price": "11,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Club sendvič",
-   "weight": "400 g",
-   "category": "",
-   "price": "14,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Hummus z pečenej papriky",
-   "weight": "175 g",
-   "category": "",
-   "price": "12,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Pistáciová šľahaná feta s malinovým medom",
-   "weight": "180 g",
-   "category": "",
-   "price": "11,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Letná farmárska tartina",
-   "weight": "320 g",
-   "category": "",
-   "price": "12,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Čerstvé linquine so zeleným pestom",
-   "weight": "280 g",
-   "category": "",
-   "price": "14,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "BBQ Quesadilla",
-   "weight": "280 g",
-   "category": "",
-   "price": "14,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Cézar wrap",
-   "weight": "350 g",
-   "category": "",
-   "price": "14,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Domáce zelerové chipsy",
-   "weight": "200 g",
-   "category": "",
-   "price": "4,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Crème Brulée",
-   "weight": "120 g",
-   "category": "",
-   "price": "5,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Frozen Guava Aperol Spritz",
-   "weight": "0.25 l",
-   "category": "",
-   "price": "7,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "St. Germain Spritz",
-   "weight": "0.25 l",
-   "category": "",
-   "price": "7,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Blood Orange Gin & Tonic",
-   "weight": "0.25 l",
-   "category": "",
-   "price": "7,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Mimosa ananásová",
-   "weight": "0.25 l",
-   "category": "",
-   "price": "6,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Mimosa ananásová NEALKO",
-   "weight": "0.25 l",
-   "category": "",
-   "price": "7,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Koňak Hennessy, V.S.O.P.",
-   "weight": "0,04 l",
-   "category": "",
-   "price": "6,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Whisky Laphroaig 10 y.o",
-   "weight": "0,04 l",
-   "category": "",
-   "price": "6,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Rum Zacapa 23 y.o.",
-   "weight": "0,04 l",
-   "category": "",
-   "price": "6,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Tequila Don Julio Reposado",
-   "weight": "0,04 l",
-   "category": "",
-   "price": "6,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Francúzsky likér z kvetov bazy čiernej – Saint Germain",
-   "weight": "0,02 l / 0,04 l",
-   "category": "",
-   "price": "2,79 € / 3,79 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Francúzsky likér z ostružín, malín, vanilky, medu a citrusov – Chambord",
-   "weight": "0,02 l / 0,04 l",
-   "category": "",
-   "price": "2,79 € / 3,79 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Taliansky likér z lesných jahôd – Fragoli",
-   "weight": "0,02 l / 0,04 l",
-   "category": "",
-   "price": "2,79 € / 3,79 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Slovenský likér z horského medu, byliniek a horca – Bentianna",
-   "weight": "0,02 l / 0,04 l",
-   "category": "",
-   "price": "2,79 € / 3,79 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "ERB Svetlý ležiak 12% 0,4 l",
-   "weight": "0,4 l",
-   "category": "",
-   "price": "4,29 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "GALGAN Sunshine Reggae session IPA 12%",
-   "weight": "0,4 l",
-   "category": "",
-   "price": "3,69 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Pivovar GENERAL nealkoholický ležiak 0,4 l",
-   "weight": "0,4 l",
-   "category": "",
-   "price": "3,29 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Pivovar u ÁBELA IPA Šintr 11%",
-   "weight": "0,4 l",
-   "category": "",
-   "price": "3,69 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Pivovar GENERAL, svetlý ležiak 10%",
-   "weight": "0,4 l",
-   "category": "",
-   "price": "3,29 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Pivovar GENERAL, sezónny špeciál podľa aktuálnej ponuky",
-   "weight": "",
-   "category": "",
-   "price": "4,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Prosecco",
-   "weight": "",
-   "category": "",
-   "price": "2,99 € / 17,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Prosecco",
-   "weight": "",
-   "category": "",
-   "price": "3,49 € / 22,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Muškát Moravský",
-   "weight": "",
-   "category": "",
-   "price": "2,49 € / 15,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Devín, vínko Klimko",
-   "weight": "",
-   "category": "",
-   "price": "3,49 € / 22,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Chardonnay",
-   "weight": "",
-   "category": "",
-   "price": "3,49 € / 22,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Pálava",
-   "weight": "",
-   "category": "",
-   "price": "3,49 € / 22,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Pesecká leánka",
-   "weight": "",
-   "category": "",
-   "price": "3,49 € / 22,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Rulandské šedé",
-   "weight": "",
-   "category": "",
-   "price": "3,49 € / 22,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Palina Sparkling Herbst Resfresh",
-   "weight": "",
-   "category": "",
-   "price": "2,99 € / 19,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Cabernet Souvignon rosé",
-   "weight": "",
-   "category": "",
-   "price": "3,49 € / 22,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Alibernet rosé",
-   "weight": "",
-   "category": "",
-   "price": "3,49 € / 22,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Rosso Dei Picchi",
-   "weight": "",
-   "category": "",
-   "price": "3,19 € / 20,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Merlot",
-   "weight": "",
-   "category": "",
-   "price": "2,49 € / 15,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Neronet SELECTION",
-   "weight": "",
-   "category": "",
-   "price": "4,49 € / 29,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Dunaj",
-   "weight": "",
-   "category": "",
-   "price": "3,49 € / 22,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Espresso / Espresso lungo",
-   "weight": "",
-   "category": "",
-   "price": "2,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Ristretto",
-   "weight": "",
-   "category": "",
-   "price": "2,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Espresso macchiato",
-   "weight": "",
-   "category": "",
-   "price": "2,89 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Cortado",
-   "weight": "",
-   "category": "",
-   "price": "2,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Espresso doppio",
-   "weight": "",
-   "category": "",
-   "price": "3,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Cappuccino / Café Latté",
-   "weight": "",
-   "category": "",
-   "price": "3,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Flat White",
-   "weight": "",
-   "category": "",
-   "price": "3,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Espresso tonic",
-   "weight": "",
-   "category": "",
-   "price": "3,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Caffé Frappé",
-   "weight": "",
-   "category": "",
-   "price": "3,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Matcha Cappuccino",
-   "weight": "",
-   "category": "",
-   "price": "4,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Matcha Latte",
-   "weight": "",
-   "category": "",
-   "price": "4,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Maresi mlieko",
-   "weight": "10 ml",
-   "category": "",
-   "price": "0,39 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Coconut Matcha",
-   "weight": "450 ml",
-   "category": "",
-   "price": "5,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Coconut Intense Matcha",
-   "weight": "450 ml",
-   "category": "",
-   "price": "6,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Mango Coconut Matcha",
-   "weight": "450 ml",
-   "category": "",
-   "price": "6,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Čajová konvička",
-   "weight": "0,35 l",
-   "category": "",
-   "price": "3,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "lZelený ľadový čaj s jazmínom",
-   "weight": "0,3 l",
-   "category": "",
-   "price": "2,99 € / 4,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Rakytník",
-   "weight": "0,3 l / 0,5 l",
-   "category": "",
-   "price": "2,99 € / 4,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Levanduľa s citrónom",
-   "weight": "0,3 l / 0,5 l",
-   "category": "",
-   "price": "2,99 € / 4,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Citronáda bez cukru",
-   "weight": "0,3 l / 0,5 l",
-   "category": "",
-   "price": "2,99 € / 4,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Čučoriedková s čiernou ríbezľou",
-   "weight": "0,3 l / 0,5 l",
-   "category": "",
-   "price": "2,99 € / 4,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Oranžáda s rozmarínom",
-   "weight": "0,3 l / 0,5 l",
-   "category": "",
-   "price": "2,99 € / 4,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Matcha mango kombucha",
-   "weight": "0,3 l / 0,5 l",
-   "category": "",
-   "price": "4,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Sóda s citrónom",
-   "weight": "0,3 l / 0,5 l",
-   "category": "",
-   "price": "1,79 € / 2,95 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Zázvorové pivo",
-   "weight": "0,3 l",
-   "category": "",
-   "price": "3,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Levanduľové pivo",
-   "weight": "0,3 l",
-   "category": "",
-   "price": "3,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Tatranská minerálka",
-   "weight": "0,33 l",
-   "category": "",
-   "price": "3,49 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "100% Červená hroznová šťava",
-   "weight": "0,1 l",
-   "category": "",
-   "price": "1,99 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "FOOD GARDEN",
-   "name": "Domáce buchty na pare, sladká posýpka, maslo",
-   "weight": "320g",
-   "category": "Denné menu",
-   "price": "7.90€",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "UMAMI",
-   "name": "Paradajková s bazalkou a parmezánom",
-   "weight": "0.33 l",
-   "category": "Polievky samostatne",
-   "price": "2.00 €",
-   "protein_g": 15,
-   "kcal": 550,
-   "reason": "unknown dish, generic lunch guess"
-  },
-  {
-   "restaurant": "MINT",
-   "name": "batatové placky (s gorgonzolovou omáčkou a hroznom, vlašské orechy, listový šalát, [ yuzu ] emulzia)",
-   "weight": "350 g",
-   "category": "",
-   "price": "10.90 €",
-   "protein_g": 13,
-   "kcal": 440,
-   "reason": "'salat' ~350 g + sides, keyword table"
-  },
-  {
-   "restaurant": "FOOD GARDEN",
-   "name": "Francúzske zemiaky, kyslá uhorka",
-   "weight": "350g",
-   "category": "Denné menu",
-   "price": "8.40€",
-   "protein_g": 13,
-   "kcal": 615,
-   "reason": "'zemiak' ~350 g + sides, keyword table"
-  },
-  {
-   "restaurant": "OTTO",
-   "name": "Cícerová polievka | A:",
-   "weight": "",
-   "category": "Polievka",
-   "price": "",
-   "protein_g": 13,
-   "kcal": 214,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "UMAMI",
-   "name": "Huevos rancheros s ryžou a volským okom",
-   "weight": "350 g",
-   "category": "MENU - hlavné jedlá a šaláty s polievkou",
-   "price": "7.90 €",
-   "protein_g": 13,
-   "kcal": 440,
-   "reason": "'salat' ~350 g + sides, keyword table"
+   "reason": "Beef with noodles and nuts"
   },
   {
    "restaurant": "NOSTALGIA",
-   "name": "III. Domáce parené buchty plnené slivkovým lekvárom, kakaová posýpka s cukrom a maslom 400g + polievka",
-   "weight": "400g",
+   "name": "IV. Vyprážaný kurací / bravčový rezeň, viedenský zemiakový šalát 140/250 + polievka",
+   "weight": "",
    "category": "Hlavné jedlo",
    "price": "",
-   "protein_g": 12,
-   "kcal": 180,
-   "reason": "soup ~400 ml, keyword table"
+   "protein_g": 30,
+   "kcal": 550,
+   "reason": "Fried meat, potato salad"
   },
   {
-   "restaurant": "PICKNICK",
-   "name": "Zeleninový krém",
-   "weight": "",
-   "category": "Polievka",
-   "price": "",
-   "protein_g": 10,
-   "kcal": 148,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "PICKNICK",
-   "name": "Melónové gazpacho",
-   "weight": "",
-   "category": "Polievka",
-   "price": "",
-   "protein_g": 10,
-   "kcal": 148,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "FAJNE JEDLO",
-   "name": "Letná zeleninová so špenátom",
-   "weight": "0,33l",
-   "category": "Polievka",
-   "price": "",
-   "protein_g": 10,
-   "kcal": 148,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "DOCK7",
-   "name": "Fazuľová polievka 0,25 l (biela fazuľka, zemiaky, smotana, kôpor)",
-   "weight": "0,25 l",
-   "category": "Polievka týždňa",
-   "price": "",
-   "protein_g": 10,
-   "kcal": 138,
-   "reason": "soup ~250 ml, keyword table"
-  },
-  {
-   "restaurant": "WERK",
-   "name": "krém z červenej šošovice, jablká, zázvor, pečené paradajky, koriander",
-   "weight": "0,25l",
-   "category": "SOUP",
-   "price": "",
-   "protein_g": 10,
-   "kcal": 138,
-   "reason": "soup ~250 ml, keyword table"
-  },
-  {
-   "restaurant": "KOLKOVNA",
-   "name": "Mrkvový krém so zázvorom a krutónmi 0,33 l",
-   "weight": "0,33 l",
-   "category": "Denná polievka",
-   "price": "",
-   "protein_g": 10,
-   "kcal": 148,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Pečené zemiakové lupienky s rozmarínom",
-   "weight": "220 g",
-   "category": "",
-   "price": "5,99 €",
-   "protein_g": 10,
-   "kcal": 498,
-   "reason": "'zemiak' ~220 g + sides, keyword table"
+   "restaurant": "MESTIANSKY PIVOVAR",
+   "name": "Vyprážaný bravčový rezeň, zemiakový šalát",
+   "weight": "150 g",
+   "category": "Piatok",
+   "price": "10.50 €",
+   "protein_g": 30,
+   "kcal": 550,
+   "reason": "Fried pork, potato salad"
   },
   {
    "restaurant": "APOLKA",
-   "name": "Slepačí vývar s mäsom, zeleninou, rezancami a ligurčekom",
+   "name": "Teľací rezeň v panko strúhanke, mladé zemiaky na masle s pažítkou,uhorkový šalát",
    "weight": "",
-   "category": "Polievka",
+   "category": "Hlavné Jedlo",
    "price": "",
-   "protein_g": 10,
-   "kcal": 148,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "FOOD GARDEN",
-   "name": "Mrkvová polievka so zázvorom",
-   "weight": "0,33l",
-   "category": "Denné menu",
-   "price": "0.80€",
-   "protein_g": 10,
-   "kcal": 148,
-   "reason": "soup ~330 ml, keyword table"
-  },
-  {
-   "restaurant": "PICKNICK",
-   "name": "Sekaná, zemiaky, šalát",
-   "weight": "",
-   "category": "Menu 1",
-   "price": "12,90 €",
-   "protein_g": 9,
-   "kcal": 435,
-   "reason": "'zemiak' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "PICKNICK",
-   "name": "Paradajkové Arancini, šalátik",
-   "weight": "",
-   "category": "Menu 2",
-   "price": "10,90 €",
-   "protein_g": 9,
-   "kcal": 360,
-   "reason": "'salat' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "FAJNE JEDLO",
-   "name": "Domáce zemiakové šúľance s makom, grankom, maslo, ríbezľový džem",
-   "weight": "",
-   "category": "Hlavne jedlo",
-   "price": "",
-   "protein_g": 9,
-   "kcal": 435,
-   "reason": "'zemiak' ~150 g + sides, keyword table"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Paradajková polievka s mozarellou a focacciou",
-   "weight": "300 ml",
-   "category": "Polievka týždňa",
-   "price": "1,99 €",
-   "protein_g": 9,
-   "kcal": 135,
-   "reason": "soup ~300 ml, keyword table"
-  },
-  {
-   "restaurant": "ST.GERMAIN",
-   "name": "Zemiakové lupienky",
-   "weight": "150 g",
-   "category": "",
-   "price": "4,49 €",
-   "protein_g": 9,
-   "kcal": 435,
-   "reason": "'zemiak' ~150 g + sides, keyword table"
+   "protein_g": 30,
+   "kcal": 550,
+   "reason": "Veal schnitzel, potatoes, salad"
   },
   {
    "restaurant": "UMAMI",
@@ -1460,19 +100,99 @@
    "weight": "150/200 g",
    "category": "MENU - hlavné jedlá a šaláty s polievkou",
    "price": "8.40 €",
-   "protein_g": 9,
-   "kcal": 360,
-   "reason": "'salat' ~150 g + sides, keyword table"
+   "protein_g": 30,
+   "kcal": 500,
+   "reason": "Fish with peas and citrus sauce"
+  },
+  {
+   "restaurant": "UMAMI",
+   "name": "Šalát s grilovanými kuracími prsiami a pestom 🥓🥗🍖 (cherry paradajky, grilovaná slanina a pesto majonéza)",
+   "weight": "350 g",
+   "category": "Šaláty samostnatne",
+   "price": "8.40 €",
+   "protein_g": 30,
+   "kcal": 450,
+   "reason": "Chicken salad with bacon and pesto"
+  },
+  {
+   "restaurant": "PICKNICK",
+   "name": "Sekaná, zemiaky, šalát",
+   "weight": "",
+   "category": "Menu 1",
+   "price": "12,90 €",
+   "protein_g": 25,
+   "kcal": 450,
+   "reason": "Meatloaf, potatoes, salad typical portion"
+  },
+  {
+   "restaurant": "KOLKOVNA",
+   "name": "Španielsky vtáčik s tarhoňou 150 g",
+   "weight": "150 g",
+   "category": "Jedlo dňa č.1",
+   "price": "",
+   "protein_g": 25,
+   "kcal": 450,
+   "reason": "Stuffed beef roll, tarhoňa"
   },
   {
    "restaurant": "NOSTALGIA",
-   "name": "Paradajková polievka s parmezánom 0,25l",
-   "weight": "0,25l",
-   "category": "Polievka",
+   "name": "I. Vyprážaný údený syr, hranolky, domáca tatárska omáčka 140/200/30 + polievka",
+   "weight": "",
+   "category": "Hlavné jedlo",
    "price": "",
-   "protein_g": 8,
-   "kcal": 112,
-   "reason": "soup ~250 ml, keyword table"
+   "protein_g": 25,
+   "kcal": 600,
+   "reason": "Fried cheese, fries, tartar sauce"
+  },
+  {
+   "restaurant": "ST.GERMAIN",
+   "name": "Club sendvič",
+   "weight": "400 g",
+   "category": "",
+   "price": "10,99 €",
+   "protein_g": 25,
+   "kcal": 600,
+   "reason": "Club sandwich, high calories"
+  },
+  {
+   "restaurant": "FOOD GARDEN",
+   "name": "Kuracie ragú sedliacke (slanina, klobása), ryža",
+   "weight": "150g",
+   "category": "Denné menu",
+   "price": "8.40€",
+   "protein_g": 25,
+   "kcal": 450,
+   "reason": "Chicken ragout with rice"
+  },
+  {
+   "restaurant": "FOOD GARDEN",
+   "name": "Kuracie ragú sedliacke (slanina, klobása), čerstvá zelenina",
+   "weight": "150g",
+   "category": "Denné menu",
+   "price": "8.40€",
+   "protein_g": 25,
+   "kcal": 400,
+   "reason": "Chicken ragout with vegetables"
+  },
+  {
+   "restaurant": "WERK",
+   "name": "pečený baklažán, beluga šošovica, kozí syr, hrozienka,mrkva, tahini dressing",
+   "weight": "300 g",
+   "category": "MEALS",
+   "price": "",
+   "protein_g": 20,
+   "kcal": 400,
+   "reason": "Eggplant, lentils, goat cheese"
+  },
+  {
+   "restaurant": "ST.GERMAIN",
+   "name": "BBQ Quesadilla",
+   "weight": "280 g",
+   "category": "",
+   "price": "10,99 €",
+   "protein_g": 20,
+   "kcal": 450,
+   "reason": "Quesadilla, moderate protein"
   },
   {
    "restaurant": "FOOD GARDEN",
@@ -1480,9 +200,239 @@
    "weight": "120g",
    "category": "Denné menu",
    "price": "8.40€",
+   "protein_g": 20,
+   "kcal": 450,
+   "reason": "Fried cheese, potatoes, tartar sauce"
+  },
+  {
+   "restaurant": "OTTO",
+   "name": "Lasagne melanzana",
+   "weight": "",
+   "category": "",
+   "price": "",
+   "protein_g": 20,
+   "kcal": 450,
+   "reason": "Vegetarian lasagna, moderate protein"
+  },
+  {
+   "restaurant": "UMAMI",
+   "name": "Huevos rancheros s ryžou a volským okom",
+   "weight": "350 g",
+   "category": "MENU - hlavné jedlá a šaláty s polievkou",
+   "price": "7.90 €",
+   "protein_g": 20,
+   "kcal": 400,
+   "reason": "Egg dish with rice"
+  },
+  {
+   "restaurant": "UMAMI",
+   "name": "Šalát s prosciuttom a melónom cantaloupe (s plátkami prosciutto crudo, paradajkami, baby mozzarellou, pistáciami, broskyňami a malinovým vinaigrette)",
+   "weight": "350 g",
+   "category": "Šaláty samostnatne",
+   "price": "8.40 €",
+   "protein_g": 20,
+   "kcal": 400,
+   "reason": "Salad with prosciutto and melon"
+  },
+  {
+   "restaurant": "PICKNICK",
+   "name": "Hummus, bryndza, baby zemiaky, nakladaná reďkovka",
+   "weight": "",
+   "category": "Menu 2",
+   "price": "6,90 €",
+   "protein_g": 15,
+   "kcal": 400,
+   "reason": "Hummus, bryndza, potatoes, moderate protein"
+  },
+  {
+   "restaurant": "KOLKOVNA",
+   "name": "Zemiakový prívarok s klobásou a chlebom 250 g",
+   "weight": "250 g",
+   "category": "Jedlo dňa č.2",
+   "price": "",
+   "protein_g": 15,
+   "kcal": 400,
+   "reason": "Potato stew with sausage"
+  },
+  {
+   "restaurant": "APOLKA",
+   "name": "Slepačí vývar s mäsom, zeleninou, rezancami a ligurčekom",
+   "weight": "",
+   "category": "Polievka",
+   "price": "",
+   "protein_g": 15,
+   "kcal": 250,
+   "reason": "Chicken broth with noodles"
+  },
+  {
+   "restaurant": "UMAMI",
+   "name": "Šalát s kozím syrom 2.0 (grilovaná cvikla, karamelizované vlašské orechy, horčicový dressing, krémové balsamico, med)",
+   "weight": "350 g",
+   "category": "Šaláty samostnatne",
+   "price": "8.40 €",
+   "protein_g": 15,
+   "kcal": 350,
+   "reason": "Salad with goat cheese and nuts"
+  },
+  {
+   "restaurant": "PICKNICK",
+   "name": "Listový šalát s ovocím a orechmi, balkánsky syr",
+   "weight": "",
+   "category": "Špeciál 1",
+   "price": "8,90 €",
+   "protein_g": 12,
+   "kcal": 350,
+   "reason": "Salad with cheese and nuts"
+  },
+  {
+   "restaurant": "KOLKOVNA",
+   "name": "Zmes listových šalátov, grilovaný kozí syr a cvikla, cesnaková bageta",
+   "weight": "",
+   "category": "Jedlo dňa č.3",
+   "price": "",
+   "protein_g": 12,
+   "kcal": 350,
+   "reason": "Salad with goat cheese and bread"
+  },
+  {
+   "restaurant": "PICKNICK",
+   "name": "Paradajkové Arancini, šalátik",
+   "weight": "",
+   "category": "Menu 2",
+   "price": "10,90 €",
+   "protein_g": 10,
+   "kcal": 300,
+   "reason": "Rice balls, salad, moderate protein"
+  },
+  {
+   "restaurant": "NOSTALGIA",
+   "name": "III. Domáce parené buchty plnené slivkovým lekvárom, kakaová posýpka s cukrom a maslom 400g + polievka",
+   "weight": "400g",
+   "category": "Hlavné jedlo",
+   "price": "",
+   "protein_g": 10,
+   "kcal": 600,
+   "reason": "Sweet dumplings, high calories"
+  },
+  {
+   "restaurant": "FOOD GARDEN",
+   "name": "Hovädzí vývar so zeleninou a rezancami",
+   "weight": "0,33l",
+   "category": "Denné menu",
+   "price": "0.70€",
+   "protein_g": 10,
+   "kcal": 150,
+   "reason": "Beef broth with noodles"
+  },
+  {
+   "restaurant": "FOOD GARDEN",
+   "name": "Francúzske zemiaky, kyslá uhorka",
+   "weight": "350g",
+   "category": "Denné menu",
+   "price": "8.40€",
+   "protein_g": 10,
+   "kcal": 350,
+   "reason": "French potatoes, moderate calories"
+  },
+  {
+   "restaurant": "OTTO",
+   "name": "Kurací vývar",
+   "weight": "",
+   "category": "Polievka",
+   "price": "",
+   "protein_g": 10,
+   "kcal": 150,
+   "reason": "Chicken broth, typical portion"
+  },
+  {
+   "restaurant": "MESTIANSKY PIVOVAR",
+   "name": "Ryžový nákyp s mangom, hrozienka, kompót",
+   "weight": "320 g",
+   "category": "Piatok",
+   "price": "9.90 €",
    "protein_g": 8,
-   "kcal": 408,
-   "reason": "'zemiak' ~120 g + sides, keyword table"
+   "kcal": 400,
+   "reason": "Rice pudding with mango"
+  },
+  {
+   "restaurant": "FOOD GARDEN",
+   "name": "Domáce buchty na pare, sladká posýpka, maslo",
+   "weight": "320g",
+   "category": "Denné menu",
+   "price": "7.90€",
+   "protein_g": 8,
+   "kcal": 600,
+   "reason": "Sweet dumplings, high calories"
+  },
+  {
+   "restaurant": "OTTO",
+   "name": "Cícerová polievka | A:",
+   "weight": "",
+   "category": "Polievka",
+   "price": "",
+   "protein_g": 8,
+   "kcal": 150,
+   "reason": "Chickpea soup, moderate protein"
+  },
+  {
+   "restaurant": "UMAMI",
+   "name": "Letná cuketová s cícerom a tymiánom",
+   "weight": "0,33 l",
+   "category": "Polievky samostatne",
+   "price": "2.00 €",
+   "protein_g": 8,
+   "kcal": 150,
+   "reason": "Zucchini soup with chickpeas"
+  },
+  {
+   "restaurant": "ST.GERMAIN",
+   "name": "Paradajková polievka s mozarellou a focacciou",
+   "weight": "300 ml",
+   "category": "Polievka týždňa",
+   "price": "1,99 €",
+   "protein_g": 6,
+   "kcal": 150,
+   "reason": "Tomato soup with mozzarella"
+  },
+  {
+   "restaurant": "WERK",
+   "name": "krém z červenej šošovice, jablká, zázvor, pečené paradajky, koriander",
+   "weight": "0,25l",
+   "category": "SOUP",
+   "price": "",
+   "protein_g": 5,
+   "kcal": 120,
+   "reason": "Lentil soup, small portion"
+  },
+  {
+   "restaurant": "NOSTALGIA",
+   "name": "Paradajková polievka s parmezánom 0,25l",
+   "weight": "0,25l",
+   "category": "Polievka",
+   "price": "",
+   "protein_g": 5,
+   "kcal": 120,
+   "reason": "Tomato soup with parmesan"
+  },
+  {
+   "restaurant": "UMAMI",
+   "name": "Paradajková s bazalkou a parmezánom",
+   "weight": "0.33 l",
+   "category": "Polievky samostatne",
+   "price": "2.00 €",
+   "protein_g": 5,
+   "kcal": 120,
+   "reason": "Tomato soup with parmesan"
+  },
+  {
+   "restaurant": "KOLKOVNA",
+   "name": "Mrkvový krém so zázvorom a krutónmi 0,33 l",
+   "weight": "0,33 l",
+   "category": "Denná polievka",
+   "price": "",
+   "protein_g": 3,
+   "kcal": 120,
+   "reason": "Carrot soup with croutons"
   },
   {
    "restaurant": "MESTIANSKY PIVOVAR",
@@ -1491,11 +441,44 @@
    "category": "Piatok",
    "price": "",
    "protein_g": 3,
-   "kcal": 148,
-   "reason": "soup ~330 ml, keyword table"
+   "kcal": 100,
+   "reason": "Cauliflower soup, low protein"
+  },
+  {
+   "restaurant": "FOOD GARDEN",
+   "name": "Mrkvová polievka so zázvorom",
+   "weight": "0,33l",
+   "category": "Denné menu",
+   "price": "0.80€",
+   "protein_g": 3,
+   "kcal": 120,
+   "reason": "Carrot soup with ginger"
+  },
+  {
+   "restaurant": "PICKNICK",
+   "name": "Zeleninový krém",
+   "weight": "",
+   "category": "Polievka",
+   "price": "",
+   "protein_g": 2,
+   "kcal": 80,
+   "reason": "Vegetable soup, low protein and calories"
+  },
+  {
+   "restaurant": "PICKNICK",
+   "name": "Melónové gazpacho",
+   "weight": "",
+   "category": "Polievka",
+   "price": "",
+   "protein_g": 1,
+   "kcal": 50,
+   "reason": "Melon soup, low protein and calories"
   }
  ],
  "warnings": [
+  "MINT: menu PDF covers 13.07.–17.07.2026",
+  "couldn't read FAJNE JEDLO today (HTTPError)",
+  "DOCK7: menu PDF covers 13.07.–17.07.",
   "SESTKA: still shows STREDA 1. 7. 2026"
  ]
 }
