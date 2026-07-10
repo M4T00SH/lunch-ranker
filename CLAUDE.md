@@ -28,21 +28,17 @@ involved in production.
   start is the fallback for unlabeled menus. Dropped soups are logged as
   `SOUP dropped`.
 
-- Schedule: GitHub's cron scheduler was DEAD for this repo — zero scheduled
-  runs fired (confirmed 2026-07-07 with same-day test crons) — but it came
-  back to life on 2026-07-09 and the backup crons now fire (late, ~13:30 +
-  ~14:15 local), duplicating the cron-job.org runs. Harmless (idempotent),
-  but afternoon runs can overwrite the page after restaurants swap menus. Ruled out:
+- Schedule: the ONLY trigger is cron-job.org (user's account, jobs 8031253
+  + 8031261) calling the workflow_dispatch API at 10:45 + 11:30
+  Europe/Bratislava Mon-Fri with the fine-grained PAT "lunch-ranker-cron".
+  GitHub's own cron was removed 2026-07-10: it was dead for weeks, then
+  revived 2026-07-09 firing hours late (~13:30+) and overwriting the page
+  in the afternoon after restaurants had swapped menus. If cron-job.org
+  ever dies the page just goes stale (date is printed on it) — re-add
+  crons or dispatch manually. (PAT: Actions read+write, this repo only, no
+  expiration. During the dead-scheduler debugging we ruled out
   fork/default-branch/workflow-state, unlinked commit email, platform
-  incident. Tried without success: re-push, disable/enable cycle, file rename
-  (update-menus.yml → daily-refresh.yml). The 4 UTC crons + dst-guard stay in
-  the workflow as a free backup, but the real trigger is external:
-  cron-job.org (user's account, jobs 8031253 + 8031261) calls the
-  workflow_dispatch API at 10:45 + 11:30 Europe/Bratislava Mon-Fri using a
-  fine-grained PAT "lunch-ranker-cron" (Actions: read+write, this repo only,
-  no expiration). Set up + end-to-end verified 2026-07-07; first live proof
-  expected 2026-07-08 10:45. cron-job.org handles DST (timezone-aware), so
-  the dst-guard only matters for the backup GitHub crons.
+  incident; re-push, disable/enable and file rename didn't help either.)
 - WERK markup change 2026-07: dish rows are .smartlunch-wrap (no longer
   .smartlunch-days) and ALL carry smartlunch-monday regardless of real day —
   adapter assigns days by header-row order, never by weekday class.
