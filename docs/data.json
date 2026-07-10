@@ -1,7 +1,7 @@
 {
  "date": "2026-07-10",
  "day_label": "Piatok 10.07.2026",
- "generated_at": "11:31",
+ "generated_at": "13:31",
  "method": "keyword table (rough fallback)",
  "dishes": [
   {
@@ -65,26 +65,6 @@
    "reason": "'pastrami' ~300 g + sides, keyword table"
   },
   {
-   "restaurant": "FOOD GARDEN",
-   "name": "Pečené kuracie stehno, dusená ryža, kompót",
-   "weight": "280g",
-   "category": "Denné menu",
-   "price": "8.40€",
-   "protein_g": 70,
-   "kcal": 762,
-   "reason": "'kuraci' ~280 g + sides, keyword table"
-  },
-  {
-   "restaurant": "FOOD GARDEN",
-   "name": "Pečené kuracie stehno, čerstvá zelenina",
-   "weight": "280g",
-   "category": "Denné menu",
-   "price": "8.40€",
-   "protein_g": 70,
-   "kcal": 762,
-   "reason": "'kuraci' ~280 g + sides, keyword table"
-  },
-  {
    "restaurant": "UMAMI",
    "name": "Šalát s prosciuttom a melónom cantaloupe (s plátkami prosciutto crudo, paradajkami, baby mozzarellou, pistáciami, broskyňami a malinovým vinaigrette)",
    "weight": "350 g",
@@ -145,14 +125,14 @@
    "reason": "'syr' ~250 g + sides, keyword table"
   },
   {
-   "restaurant": "FOOD GARDEN",
-   "name": "Žemľovka s tvarohom a ovocím",
-   "weight": "350g",
-   "category": "Denné menu",
-   "price": "7.90€",
-   "protein_g": 48,
-   "kcal": 650,
-   "reason": "'tvaroh' ~350 g + sides, keyword table"
+   "restaurant": "NOSTALGIA",
+   "name": "II. Caesar šalát (kuracie prsia na grile, rímsky šalát, varené vajce, caesar dresing, krutóny, parmezán) 400g + polievka",
+   "weight": "400g",
+   "category": "Hlavné jedlo",
+   "price": "",
+   "protein_g": 46,
+   "kcal": 330,
+   "reason": "soup ~400 ml, keyword table"
   },
   {
    "restaurant": "PICKNICK",
@@ -176,7 +156,7 @@
   },
   {
    "restaurant": "FAJNE JEDLO",
-   "name": "Chimichangas hovädzím trhaným mäsom, fazuľová ryža, paradajková salsa, syr, šalát",
+   "name": "Chimichangas hovädzím trhaným mäsom, fazuľová pyré, paradajková salsa, syr, šalát",
    "weight": "",
    "category": "Hlavne jedlo",
    "price": "",
@@ -195,11 +175,41 @@
    "reason": "'klobas' ~250 g + sides, keyword table"
   },
   {
+   "restaurant": "FOOD GARDEN",
+   "name": "Hovädzí vývar so zeleninou a rezancami",
+   "weight": "0,33l",
+   "category": "Denné menu",
+   "price": "0.70€",
+   "protein_g": 43,
+   "kcal": 363,
+   "reason": "soup ~330 ml, keyword table"
+  },
+  {
    "restaurant": "FAJNE JEDLO",
    "name": "Kurací steak na bylinkách, karamelizovaná baby karotka na masle, ryža",
    "weight": "",
    "category": "Hlavne jedlo",
    "price": "",
+   "protein_g": 40,
+   "kcal": 548,
+   "reason": "'kuraci' ~150 g + sides, keyword table"
+  },
+  {
+   "restaurant": "FOOD GARDEN",
+   "name": "Kuracie ragú sedliacke (slanina, klobása), ryža",
+   "weight": "150g",
+   "category": "Denné menu",
+   "price": "8.40€",
+   "protein_g": 40,
+   "kcal": 548,
+   "reason": "'kuraci' ~150 g + sides, keyword table"
+  },
+  {
+   "restaurant": "FOOD GARDEN",
+   "name": "Kuracie ragú sedliacke (slanina, klobása), čerstvá zelenina",
+   "weight": "150g",
+   "category": "Denné menu",
+   "price": "8.40€",
    "protein_g": 40,
    "kcal": 548,
    "reason": "'kuraci' ~150 g + sides, keyword table"
@@ -245,6 +255,16 @@
    "reason": "'bravcov' ~150 g + sides, keyword table"
   },
   {
+   "restaurant": "NOSTALGIA",
+   "name": "IV. Vyprážaný kurací / bravčový rezeň, viedenský zemiakový šalát 140/250 + polievka",
+   "weight": "",
+   "category": "Hlavné jedlo",
+   "price": "",
+   "protein_g": 38,
+   "kcal": 272,
+   "reason": "soup ~330 ml, keyword table"
+  },
+  {
    "restaurant": "OTTO",
    "name": "Kurací vývar",
    "weight": "",
@@ -285,6 +305,16 @@
    "reason": "'syr' ~150 g + sides, keyword table"
   },
   {
+   "restaurant": "NOSTALGIA",
+   "name": "V. BBQ pulled pork / pomaly pečené trhané bravčové plece /, chedarová omáčka, hranolky, jalapeňo, coleslaw 140/200 + polievka",
+   "weight": "",
+   "category": "Hlavné jedlo",
+   "price": "",
+   "protein_g": 36,
+   "kcal": 412,
+   "reason": "soup ~330 ml, keyword table"
+  },
+  {
    "restaurant": "APOLKA",
    "name": "Teľací rezeň v panko strúhanke, mladé zemiaky na masle s pažítkou,uhorkový šalát",
    "weight": "",
@@ -295,6 +325,16 @@
    "reason": "'rezen' ~150 g + sides, keyword table"
   },
   {
+   "restaurant": "NOSTALGIA",
+   "name": "I. Vyprážaný údený syr, hranolky, domáca tatárska omáčka 140/200/30 + polievka",
+   "weight": "",
+   "category": "Hlavné jedlo",
+   "price": "",
+   "protein_g": 33,
+   "kcal": 495,
+   "reason": "soup ~330 ml, keyword table"
+  },
+  {
    "restaurant": "UMAMI",
    "name": "Letná cuketová s cícerom a tymiánom",
    "weight": "0,33 l",
@@ -303,16 +343,6 @@
    "protein_g": 32,
    "kcal": 729,
    "reason": "'cicer' ~330 g + sides, keyword table"
-  },
-  {
-   "restaurant": "FOOD GARDEN",
-   "name": "Vyprážaný syr v mandľových lupienkoch, varené zemiaky, tatárska omáčka",
-   "weight": "120g",
-   "category": "Denné menu",
-   "price": "8.40€",
-   "protein_g": 30,
-   "kcal": 660,
-   "reason": "'syr' ~120 g + sides, keyword table"
   },
   {
    "restaurant": "MINT",
@@ -1215,6 +1245,16 @@
    "reason": "unknown dish, generic lunch guess"
   },
   {
+   "restaurant": "FOOD GARDEN",
+   "name": "Domáce buchty na pare, sladká posýpka, maslo",
+   "weight": "320g",
+   "category": "Denné menu",
+   "price": "7.90€",
+   "protein_g": 15,
+   "kcal": 550,
+   "reason": "unknown dish, generic lunch guess"
+  },
+  {
    "restaurant": "UMAMI",
    "name": "Paradajková s bazalkou a parmezánom",
    "weight": "0.33 l",
@@ -1236,13 +1276,13 @@
   },
   {
    "restaurant": "FOOD GARDEN",
-   "name": "Slepačí vývar so zeleninou a rezancami",
-   "weight": "0,33l",
+   "name": "Francúzske zemiaky, kyslá uhorka",
+   "weight": "350g",
    "category": "Denné menu",
-   "price": "0.70€",
+   "price": "8.40€",
    "protein_g": 13,
-   "kcal": 116,
-   "reason": "soup ~330 ml, keyword table"
+   "kcal": 615,
+   "reason": "'zemiak' ~350 g + sides, keyword table"
   },
   {
    "restaurant": "OTTO",
@@ -1263,6 +1303,16 @@
    "protein_g": 13,
    "kcal": 440,
    "reason": "'salat' ~350 g + sides, keyword table"
+  },
+  {
+   "restaurant": "NOSTALGIA",
+   "name": "III. Domáce parené buchty plnené slivkovým lekvárom, kakaová posýpka s cukrom a maslom 400g + polievka",
+   "weight": "400g",
+   "category": "Hlavné jedlo",
+   "price": "",
+   "protein_g": 12,
+   "kcal": 180,
+   "reason": "soup ~400 ml, keyword table"
   },
   {
    "restaurant": "PICKNICK",
@@ -1346,7 +1396,7 @@
   },
   {
    "restaurant": "FOOD GARDEN",
-   "name": "Krémová brokolicová polievka",
+   "name": "Mrkvová polievka so zázvorom",
    "weight": "0,33l",
    "category": "Denné menu",
    "price": "0.80€",
@@ -1405,16 +1455,6 @@
    "reason": "'zemiak' ~150 g + sides, keyword table"
   },
   {
-   "restaurant": "FOOD GARDEN",
-   "name": "Zemiakové guľky plnené údeným mäsom, dusená kyslá kapusta, cibuľka",
-   "weight": "150g",
-   "category": "Denné menu",
-   "price": "8.40€",
-   "protein_g": 9,
-   "kcal": 435,
-   "reason": "'zemiak' ~150 g + sides, keyword table"
-  },
-  {
    "restaurant": "UMAMI",
    "name": "Filet z morskej šťuky s hráškovou kašou a citrusovou omáčkou",
    "weight": "150/200 g",
@@ -1423,6 +1463,26 @@
    "protein_g": 9,
    "kcal": 360,
    "reason": "'salat' ~150 g + sides, keyword table"
+  },
+  {
+   "restaurant": "NOSTALGIA",
+   "name": "Paradajková polievka s parmezánom 0,25l",
+   "weight": "0,25l",
+   "category": "Polievka",
+   "price": "",
+   "protein_g": 8,
+   "kcal": 112,
+   "reason": "soup ~250 ml, keyword table"
+  },
+  {
+   "restaurant": "FOOD GARDEN",
+   "name": "Vyprážaný Encián, varené zemiaky, tatárska omáčka",
+   "weight": "120g",
+   "category": "Denné menu",
+   "price": "8.40€",
+   "protein_g": 8,
+   "kcal": 408,
+   "reason": "'zemiak' ~120 g + sides, keyword table"
   },
   {
    "restaurant": "MESTIANSKY PIVOVAR",
@@ -1436,7 +1496,6 @@
   }
  ],
  "warnings": [
-  "NOSTALGIA: no section for today's date",
   "SESTKA: still shows STREDA 1. 7. 2026"
  ]
 }
