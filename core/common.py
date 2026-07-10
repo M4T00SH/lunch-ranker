@@ -91,6 +91,23 @@ def norm(s: str) -> str:
     return re.sub(r"\s+", " ", s or "").strip()
 
 
+SOUP_NAME_WORDS = ("polievka", "vyvar", "gazpacho", "kulajda", "cibulack", "minestrone", "bujon", "krem z")
+
+
+def is_soup(d: "Dish") -> bool:
+    """Mains-only ranking: trust the category first — 'hlavné' wins over a
+    soup mention, because some menus label mains 'hlavné jedlá s polievkou'
+    or end dish names with '+ polievka' (soup included in the price). Only
+    unlabeled dishes are judged by the START of their name."""
+    cat = strip_accents((d.category or "").lower())
+    if "hlavn" in cat:
+        return False
+    if "polievk" in cat or "soup" in cat:
+        return True
+    head = " ".join(strip_accents(d.name.lower()).split()[:3])
+    return any(w in head for w in SOUP_NAME_WORDS)
+
+
 def clean_name(s: str) -> str:
     """Drop allergen codes like (1,3,7), [ * 1, 3 ], | A: 1,3 |, / A: 9 /."""
     s = norm(s)

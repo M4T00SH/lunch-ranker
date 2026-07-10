@@ -22,6 +22,11 @@ involved in production.
   JEDLO is an image → vision model.
 - Debug bad parses: `logs/run-YYYY-MM-DD.log` has the raw dish list per
   restaurant.
+- Ranking is mains-only: soups are filtered in `core/runner.py` using
+  `is_soup()` in `core/common.py` — category is trusted first ('hlavné'
+  beats a soup mention; NOSTALGIA mains end with '+ polievka'), dish-name
+  start is the fallback for unlabeled menus. Dropped soups are logged as
+  `SOUP dropped`.
 
 - Schedule: GitHub's cron scheduler was DEAD for this repo — zero scheduled
   runs fired (confirmed 2026-07-07 with same-day test crons) — but it came

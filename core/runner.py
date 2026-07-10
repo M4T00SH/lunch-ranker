@@ -6,7 +6,7 @@ import logging
 import os
 from pathlib import Path
 
-from .common import Ctx, Dish, ImageMenu, StaleMenuError, DAYS_SK
+from .common import Ctx, Dish, ImageMenu, StaleMenuError, DAYS_SK, is_soup
 from . import estimate as est
 from .render import render_page
 
@@ -72,6 +72,11 @@ def run(day_idx: int | None = None, force: bool = False) -> dict:
         except Exception as e:
             warnings.append(f"couldn't read {name} today ({type(e).__name__})")
             log.exception("%s failed", name)
+
+    for d in dishes:
+        if is_soup(d):
+            log.info("SOUP dropped | %s | %s", d.restaurant, d.name)
+    dishes = [d for d in dishes if not is_soup(d)]
 
     if dishes:
         estimates, method = est.estimate_all(dishes)
