@@ -38,7 +38,7 @@ def github_token() -> str | None:
     return None
 
 
-def _chat(messages: list, token: str, max_tokens: int = 4000) -> str:
+def _chat(messages: list, token: str, max_tokens: int = 10000) -> str:
     r = requests.post(
         ENDPOINT,
         headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},

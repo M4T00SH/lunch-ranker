@@ -23,8 +23,11 @@ involved in production.
 - Debug bad parses: `logs/run-YYYY-MM-DD.log` has the raw dish list per
   restaurant.
 
-- Schedule: GitHub's cron scheduler is DEAD for this repo — zero scheduled
-  runs ever fired (confirmed 2026-07-07 with same-day test crons). Ruled out:
+- Schedule: GitHub's cron scheduler was DEAD for this repo — zero scheduled
+  runs fired (confirmed 2026-07-07 with same-day test crons) — but it came
+  back to life on 2026-07-09 and the backup crons now fire (late, ~13:30 +
+  ~14:15 local), duplicating the cron-job.org runs. Harmless (idempotent),
+  but afternoon runs can overwrite the page after restaurants swap menus. Ruled out:
   fork/default-branch/workflow-state, unlinked commit email, platform
   incident. Tried without success: re-push, disable/enable cycle, file rename
   (update-menus.yml → daily-refresh.yml). The 4 UTC crons + dst-guard stay in
