@@ -1,5 +1,7 @@
 """FAJNE JEDLO (Tower) — weekly menu is published only as an image
-(uploads/.../JEDLIS-TOWER-<MMDD>_<MMDD>.jpg). Returns ImageMenu so the runner
+(uploads/.../JEDLIS-TOWER-<start>_<end>.jpg). The date tokens flip between
+DDMM and MMDD week to week (0607 = 6 July, but 0713 = 13 July), so the
+coverage check accepts either reading. Returns ImageMenu so the runner
 sends it to the vision model."""
 import re
 
@@ -23,13 +25,15 @@ def scrape(ctx):
     today_mmdd = ctx.target_date.strftime("%m%d")
 
     def covers_today(m):
-        # filename tokens are DDMM (0706 = 6 July); reorder to MMDD to compare
-        return _dm(m.group(1)) <= today_mmdd <= _dm(m.group(2))
+        # filename tokens are usually DDMM (0607 = 6 July) but some weeks the
+        # site flips to MMDD (0713 = 13 July) — accept either reading
+        a, b = m.group(1), m.group(2)
+        return (_dm(a) <= today_mmdd <= _dm(b)) or (a <= today_mmdd <= b)
 
     current = next((m for m in matches if covers_today(m)), None)
     if current is None:
         rng = f"{matches[0].group(1)}–{matches[0].group(2)}"
-        raise StaleMenuError(f"menu image covers {rng} (DDMM), not today")
+        raise StaleMenuError(f"menu image covers {rng} (DDMM or MMDD), not today")
 
     img = ctx.fetch(current.group(0), headers={"Referer": URL}).content
     return ImageMenu(NAME, img, "image/jpeg", current.group(0))
