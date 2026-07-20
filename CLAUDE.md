@@ -1,6 +1,6 @@
 # Protein Lunch Ranker
 
-Personal app: ranks today's lunch dishes from 14 Bratislava restaurants by
+Personal app: ranks today's lunch dishes from 15 Bratislava restaurants by
 estimated protein. Static page on GitHub Pages, refreshed by a GitHub Action
 on weekday mornings. User checks it from iPhone at work — the PC is never
 involved in production.

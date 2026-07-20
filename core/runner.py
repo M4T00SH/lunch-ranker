@@ -97,7 +97,7 @@ def run(day_idx: int | None = None, force: bool = False) -> dict:
             }
             for d, e in zip(dishes, estimates)
         ),
-        key=lambda x: -x["protein_g"],
+        key=lambda x: (-x["protein_g"], x["kcal"]),
     )
 
     data = {

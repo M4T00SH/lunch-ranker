@@ -2,10 +2,10 @@
 NAME, URL and scrape(ctx), then add it to the list below."""
 from adapters import (
     picknick, mint, fajne, dock7, werk, kolkovna, nostalgia,
-    mestiansky, stgermain, sestka, apolka, foodgarden, otto, umami,
+    mestiansky, stgermain, sestka, apolka, foodgarden, otto, umami, luca,
 )
 
 RESTAURANTS = [
     picknick, mint, fajne, dock7, werk, kolkovna, nostalgia,
-    mestiansky, stgermain, sestka, apolka, foodgarden, otto, umami,
+    mestiansky, stgermain, sestka, apolka, foodgarden, otto, umami, luca,
 ]
