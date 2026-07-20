@@ -35,7 +35,9 @@ involved in production.
   revived 2026-07-09 firing hours late (~13:30+) and overwriting the page
   in the afternoon after restaurants had swapped menus. If cron-job.org
   ever dies the page just goes stale (date is printed on it) — re-add
-  crons or dispatch manually. (PAT: Actions read+write, this repo only, no
+  crons or dispatch manually. The crons also fire on weekends (seen Sun
+  2026-07-20) — user accepts this, it's harmless (stale-warning page).
+  (PAT: Actions read+write, this repo only, no
   expiration. During the dead-scheduler debugging we ruled out
   fork/default-branch/workflow-state, unlinked commit email, platform
   incident; re-push, disable/enable and file rename didn't help either.)
