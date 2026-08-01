@@ -1,5 +1,9 @@
-"""APOLKA — 'OBEDY V APOLKE' page links a weekly PDF (uploads/dennemenu_*.pdf)
-with sections 'UTOROK 07.07.' → POLIEVKA / HLAVNÉ JEDLO, one dish each."""
+"""APOLKA — 'OBEDY V APOLKE' page links a weekly PDF with sections
+'UTOROK 07.07.' → POLIEVKA / HLAVNÉ JEDLO, one dish each. The PDF filename
+changed 2026-08 from uploads/dennemenu_*.pdf to uploads/kcfinder/files/
+Menu <dates>.pdf, so the link is found by its 'OBEDY V APOLKE' anchor text
+first, old filename pattern second. Beware: the page also links
+karta_obedov_menu.pdf (standing menu card) — anchor text avoids it."""
 import re
 
 from bs4 import BeautifulSoup
@@ -19,11 +23,15 @@ def scrape(ctx):
     page = BeautifulSoup(ctx.fetch(URL).text, "html.parser")
     link = None
     for a in page.find_all("a", href=True):
-        if "dennemenu" in a["href"].lower() and a["href"].lower().endswith(".pdf"):
+        href = a["href"].lower()
+        label = strip_accents(a.get_text(" ")).lower()
+        if ".pdf" in href and (
+            "obedy" in label or ("dennemenu" in href and href.endswith(".pdf"))
+        ):
             link = a["href"]
             break
     if not link:
-        raise ValueError("dennemenu PDF link not found")
+        raise ValueError("lunch menu PDF link not found")
     if link.startswith("uploads"):
         link = "https://www.apolka.sk/" + link
     return parse_pdf(pdf_text(ctx.fetch(link).content), ctx)
