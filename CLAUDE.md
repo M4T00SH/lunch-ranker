@@ -14,7 +14,14 @@ involved in production.
   old GPT-4o path). Key: `GEMINI_API_KEY` secret in Actions / gitignored
   `.gemini_key` file locally (user's AI Studio account, matuscerula@gmail.com).
   NO Anthropic API key — user explicitly wants zero API costs. Keyword-table
-  fallback in `core/estimate.py`.
+  fallback in `core/estimate.py`. Gemini quirks handled there: it burns
+  hidden thinking tokens (max_tokens raised to 16000) and occasionally
+  emits a malformed estimate entry (skipped per-dish + one batch retry
+  instead of dumping the whole batch on the fallback).
+  Gemini switch was verified locally + one green Actions run on Sat
+  2026-08-01 (zero dishes that day, so the first REAL production AI run is
+  Mon 2026-08-03 10:45 — page method line must say "AI (Gemini via Google
+  AI)", not "keyword table"; if not, read that day's Actions log).
 - One adapter file per restaurant in `adapters/`; registry in `config.py`.
 - Adapter contract: `NAME`, `URL`, `scrape(ctx) -> list[Dish] | ImageMenu`.
   Raise `StaleMenuError("...")` when the site still shows an old week — the
