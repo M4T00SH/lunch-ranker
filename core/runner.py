@@ -46,7 +46,7 @@ def run(day_idx: int | None = None, force: bool = False) -> dict:
 
     dishes: list[Dish] = []
     warnings: list[str] = []
-    token = est.github_token()
+    token = est.gemini_key()
 
     for mod in RESTAURANTS:
         name = mod.NAME

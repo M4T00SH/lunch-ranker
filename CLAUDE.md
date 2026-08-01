@@ -9,9 +9,12 @@ involved in production.
 
 - Python 3.12; deps: requests, beautifulsoup4, pdfplumber (`requirements.txt`)
 - Run: `python run.py` (flags: `--force`, `--day pondelok..piatok`, `--no-open`)
-- AI: GitHub Models free tier (`openai/gpt-4o`), token from `gh auth token`
-  locally / `GITHUB_TOKEN` in Actions. NO Anthropic API key — user explicitly
-  wants zero API costs. Keyword-table fallback in `core/estimate.py`.
+- AI: Gemini free tier via Google AI's OpenAI-compatible endpoint, model
+  alias `gemini-flash-latest` (GitHub Models retired 2026-07-30, killed the
+  old GPT-4o path). Key: `GEMINI_API_KEY` secret in Actions / gitignored
+  `.gemini_key` file locally (user's AI Studio account, matuscerula@gmail.com).
+  NO Anthropic API key — user explicitly wants zero API costs. Keyword-table
+  fallback in `core/estimate.py`.
 - One adapter file per restaurant in `adapters/`; registry in `config.py`.
 - Adapter contract: `NAME`, `URL`, `scrape(ctx) -> list[Dish] | ImageMenu`.
   Raise `StaleMenuError("...")` when the site still shows an old week — the

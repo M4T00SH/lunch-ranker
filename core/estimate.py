@@ -1,8 +1,11 @@
 """Protein/kcal estimation.
 
-Primary path: one batched call to GitHub Models (free tier, works in GitHub
-Actions with the built-in GITHUB_TOKEN). Fallback: rough Slovak keyword table.
-Also hosts the vision extractor for image-only menus (FAJNE JEDLO).
+Primary path: one batched call to Gemini via Google AI's OpenAI-compatible
+endpoint (free tier; GitHub Models was retired 2026-07-30). Key comes from
+the GEMINI_API_KEY env var (GitHub Actions secret) or the gitignored
+.gemini_key file at the project root (local runs). Fallback: rough Slovak
+keyword table. Also hosts the vision extractor for image-only menus
+(FAJNE JEDLO).
 """
 from __future__ import annotations
 
@@ -11,7 +14,7 @@ import json
 import logging
 import os
 import re
-import subprocess
+from pathlib import Path
 
 import requests
 
@@ -19,26 +22,27 @@ from .common import Dish, strip_accents
 
 log = logging.getLogger("estimate")
 
-ENDPOINT = "https://models.github.ai/inference/chat/completions"
-MODEL = "openai/gpt-4o"
+ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+# Alias that Google keeps pointed at the current flash model, so a model
+# retirement can't silently break the app again.
+MODEL = "gemini-flash-latest"
+
+KEY_FILE = Path(__file__).resolve().parent.parent / ".gemini_key"
 
 
-def github_token() -> str | None:
-    for var in ("GITHUB_TOKEN", "GH_TOKEN"):
-        if os.environ.get(var):
-            return os.environ[var]
+def gemini_key() -> str | None:
+    if os.environ.get("GEMINI_API_KEY"):
+        return os.environ["GEMINI_API_KEY"]
     try:
-        out = subprocess.run(
-            ["gh", "auth", "token"], capture_output=True, text=True, timeout=10
-        )
-        if out.returncode == 0 and out.stdout.strip():
-            return out.stdout.strip()
-    except Exception:
+        key = KEY_FILE.read_text(encoding="utf-8").strip()
+        if key:
+            return key
+    except OSError:
         pass
     return None
 
 
-def _chat(messages: list, token: str, max_tokens: int = 10000) -> str:
+def _chat(messages: list, token: str, max_tokens: int = 16000) -> str:
     r = requests.post(
         ENDPOINT,
         headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
@@ -95,7 +99,14 @@ def estimate_with_ai(dishes: list[Dish], token: str) -> list[dict]:
         [{"role": "system", "content": ESTIMATE_SYSTEM}, {"role": "user", "content": user}],
         token,
     )
-    estimates = {e["id"]: e for e in _parse_json(content)["estimates"]}
+    # Gemini occasionally emits a malformed entry (missing/string id) — skip
+    # those so one bad entry doesn't dump the whole batch on the fallback.
+    estimates = {}
+    for e in _parse_json(content)["estimates"]:
+        try:
+            estimates[int(e["id"])] = e
+        except (KeyError, TypeError, ValueError):
+            log.warning("skipping malformed AI estimate entry: %r", e)
     out = []
     for i, d in enumerate(dishes):
         e = estimates.get(i)
@@ -184,12 +195,14 @@ def _is_soup_kw(kw: str) -> bool:
 
 def estimate_all(dishes: list[Dish]) -> tuple[list[dict], str]:
     """Returns (estimates aligned with dishes, method string)."""
-    token = github_token()
+    token = gemini_key()
     if token:
-        try:
-            return estimate_with_ai(dishes, token), "AI (GPT-4o via GitHub Models)"
-        except Exception as e:
-            log.warning("AI estimation failed (%s), using keyword fallback", e)
+        for attempt in (1, 2):
+            try:
+                return estimate_with_ai(dishes, token), "AI (Gemini via Google AI)"
+            except Exception as e:
+                log.warning("AI estimation failed (attempt %d: %s)", attempt, e)
+        log.warning("AI estimation gave up, using keyword fallback")
     return [_keyword_estimate(d) for d in dishes], "keyword table (rough fallback)"
 
 
