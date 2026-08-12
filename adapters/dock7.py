@@ -14,7 +14,9 @@ from core.common import (
 )
 
 NAME = "DOCK7"
-URL = "https://www.dock7.sk/en/menu/"
+# Slovak page — the EN /en/menu/ variant lagged a week behind on the PDF
+# link (seen 2026-08-12: SK had 10.–14.8., EN still 3.–7.8.).
+URL = "https://www.dock7.sk/menu/"
 
 PRICE_RE = re.compile(r"\d+[.,]\d{2}\s*€")
 RANGE_RE = re.compile(r"(\d{2})\.(\d{2})\.\s*-\s*(\d{2})\.(\d{2})\.")

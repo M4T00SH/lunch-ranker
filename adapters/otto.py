@@ -1,5 +1,6 @@
-"""OTTO — Squarespace tabs; the 'Obedový špeciál' tabpanel holds one
-.menu-section per weekday with .menu-item-title dishes."""
+"""OTTO — Squarespace; one .menu-section per weekday with .menu-item-title
+dishes. Sections used to live inside an 'Obedový špeciál' tabpanel (still
+preferred when present); since 2026-08 they sit directly on the page."""
 from bs4 import BeautifulSoup
 
 from core.common import Dish, clean_name, day_index_in, find_weight, norm, strip_accents
@@ -20,10 +21,16 @@ def parse(html, ctx):
             panel = el
             break
     if panel is None:
-        raise ValueError("Obedový špeciál tab not found")
+        # 2026-08: Squarespace tabs removed — weekday .menu-sections now sit
+        # directly on the page, one per day, so parse the whole document.
+        panel = soup
+
+    sections = panel.select(".menu-section")
+    if not sections:
+        raise ValueError("menu sections not found")
 
     dishes = []
-    for section in panel.select(".menu-section"):
+    for section in sections:
         title = section.select_one(".menu-section-title")
         if not title or day_index_in(title.get_text()) != ctx.day_idx:
             continue
