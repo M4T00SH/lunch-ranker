@@ -14,6 +14,7 @@ import json
 import logging
 import os
 import re
+import time
 from pathlib import Path
 
 import requests
@@ -43,20 +44,27 @@ def gemini_key() -> str | None:
 
 
 def _chat(messages: list, token: str, max_tokens: int = 16000) -> str:
-    r = requests.post(
-        ENDPOINT,
-        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
-        json={
-            "model": MODEL,
-            "messages": messages,
-            "max_tokens": max_tokens,
-            "temperature": 0.1,
-            "response_format": {"type": "json_object"},
-        },
-        timeout=180,
-    )
-    r.raise_for_status()
-    return r.json()["choices"][0]["message"]["content"]
+    # Gemini's free tier throws intermittent 503s (killed FAJNE JEDLO on
+    # 2026-08-13) — retry transient statuses before giving up
+    for attempt in range(3):
+        r = requests.post(
+            ENDPOINT,
+            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+            json={
+                "model": MODEL,
+                "messages": messages,
+                "max_tokens": max_tokens,
+                "temperature": 0.1,
+                "response_format": {"type": "json_object"},
+            },
+            timeout=180,
+        )
+        if r.status_code in (429, 500, 502, 503, 504) and attempt < 2:
+            log.warning("Gemini %s — retrying in %ss", r.status_code, 20 * (attempt + 1))
+            time.sleep(20 * (attempt + 1))
+            continue
+        r.raise_for_status()
+        return r.json()["choices"][0]["message"]["content"]
 
 
 def _parse_json(text: str) -> dict:
