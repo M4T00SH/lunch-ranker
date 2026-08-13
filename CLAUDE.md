@@ -17,7 +17,9 @@ involved in production.
   fallback in `core/estimate.py`. Gemini quirks handled there: it burns
   hidden thinking tokens (max_tokens raised to 16000) and occasionally
   emits a malformed estimate entry (skipped per-dish + one batch retry
-  instead of dumping the whole batch on the fallback).
+  instead of dumping the whole batch on the fallback), and the free tier
+  throws intermittent 503s (killed FAJNE JEDLO 2026-08-13) — `_chat`
+  retries 429/5xx twice with 20s/40s backoff.
   Gemini switch was verified locally + one green Actions run on Sat
   2026-08-01 (zero dishes that day, so the first REAL production AI run is
   Mon 2026-08-03 10:45 — page method line must say "AI (Gemini via Google
