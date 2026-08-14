@@ -1,9 +1,12 @@
 """Protein/kcal estimation.
 
-Primary path: one batched call to Gemini via Google AI's OpenAI-compatible
-endpoint (free tier; GitHub Models was retired 2026-07-30). Key comes from
-the GEMINI_API_KEY env var (GitHub Actions secret) or the gitignored
-.gemini_key file at the project root (local runs). Fallback: rough Slovak
+Primary path: one batched call to an AI provider chain, all via OpenAI-
+compatible endpoints (free tiers; GitHub Models was retired 2026-07-30):
+Gemini first, then Groq if Gemini is down (added after Gemini free-tier
+503s pushed the whole 2026-08-14 page onto the keyword table). Keys come
+from GEMINI_API_KEY / GROQ_API_KEY env vars (GitHub Actions secrets) or
+the gitignored .gemini_key / .groq_key files at the project root (local
+runs); a provider with no key is skipped. Last resort: rough Slovak
 keyword table. Also hosts the vision extractor for image-only menus
 (FAJNE JEDLO).
 """
@@ -23,19 +26,28 @@ from .common import Dish, strip_accents
 
 log = logging.getLogger("estimate")
 
-ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 # Alias that Google keeps pointed at the current flash model, so a model
 # retirement can't silently break the app again.
-MODEL = "gemini-flash-latest"
+GEMINI_MODEL = "gemini-flash-latest"
 
-KEY_FILE = Path(__file__).resolve().parent.parent / ".gemini_key"
+GROQ_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions"
+# Groq has no evergreen alias like Gemini's — these are pinned ids, so a
+# Groq deprecation email means editing here (llama-3.3-70b-versatile and
+# llama-4-scout die 2026-08-16/07-17; gpt-oss-120b and qwen3.6-27b are
+# Groq's recommended replacements; llama-4-maverick 404s on this account).
+# If an id dies: GET /openai/v1/models with the key lists what's available.
+GROQ_MODEL = "openai/gpt-oss-120b"
+GROQ_VISION_MODEL = "qwen/qwen3.6-27b"
+
+ROOT = Path(__file__).resolve().parent.parent
 
 
-def gemini_key() -> str | None:
-    if os.environ.get("GEMINI_API_KEY"):
-        return os.environ["GEMINI_API_KEY"]
+def _read_key(env_var: str, filename: str) -> str | None:
+    if os.environ.get(env_var):
+        return os.environ[env_var]
     try:
-        key = KEY_FILE.read_text(encoding="utf-8").strip()
+        key = (ROOT / filename).read_text(encoding="utf-8").strip()
         if key:
             return key
     except OSError:
@@ -43,24 +55,53 @@ def gemini_key() -> str | None:
     return None
 
 
-def _chat(messages: list, token: str, max_tokens: int = 16000) -> str:
-    # Gemini's free tier throws intermittent 503s (killed FAJNE JEDLO on
+def providers() -> list[dict]:
+    """Available AI providers in priority order (no-key providers skipped)."""
+    out = []
+    key = _read_key("GEMINI_API_KEY", ".gemini_key")
+    if key:
+        out.append({
+            "label": "Gemini via Google AI", "endpoint": GEMINI_ENDPOINT,
+            "model": GEMINI_MODEL, "vision_model": GEMINI_MODEL, "key": key,
+            # Gemini burns hidden thinking tokens, so the cap must be huge
+            "max_tokens": 16000,
+        })
+    key = _read_key("GROQ_API_KEY", ".groq_key")
+    if key:
+        out.append({
+            "label": "Groq", "endpoint": GROQ_ENDPOINT,
+            "model": GROQ_MODEL, "vision_model": GROQ_VISION_MODEL, "key": key,
+            # Groq free tier: 8K tokens/min and max_tokens counts toward it
+            # (16000 gets an instant 413), so cap low and curb gpt-oss's
+            # visible reasoning to leave room for the input tokens
+            "max_tokens": 4000, "reasoning_effort": "low",
+        })
+    return out
+
+
+def _chat(messages: list, prov: dict, vision: bool = False) -> str:
+    body = {
+        "model": prov["vision_model"] if vision else prov["model"],
+        "messages": messages,
+        "max_tokens": prov["max_tokens"],
+        "temperature": 0.1,
+        "response_format": {"type": "json_object"},
+    }
+    # reasoning models only, and never on the vision model (non-reasoning
+    # models reject the param)
+    if not vision and prov.get("reasoning_effort"):
+        body["reasoning_effort"] = prov["reasoning_effort"]
+    # Free tiers throw intermittent 503s (Gemini killed FAJNE JEDLO on
     # 2026-08-13) — retry transient statuses before giving up
     for attempt in range(3):
         r = requests.post(
-            ENDPOINT,
-            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
-            json={
-                "model": MODEL,
-                "messages": messages,
-                "max_tokens": max_tokens,
-                "temperature": 0.1,
-                "response_format": {"type": "json_object"},
-            },
+            prov["endpoint"],
+            headers={"Authorization": f"Bearer {prov['key']}", "Content-Type": "application/json"},
+            json=body,
             timeout=180,
         )
         if r.status_code in (429, 500, 502, 503, 504) and attempt < 2:
-            log.warning("Gemini %s — retrying in %ss", r.status_code, 20 * (attempt + 1))
+            log.warning("%s %s — retrying in %ss", prov["label"], r.status_code, 20 * (attempt + 1))
             time.sleep(20 * (attempt + 1))
             continue
         r.raise_for_status()
@@ -86,7 +127,7 @@ ESTIMATE_SYSTEM = (
 )
 
 
-def estimate_with_ai(dishes: list[Dish], token: str) -> list[dict]:
+def estimate_with_ai(dishes: list[Dish], prov: dict) -> list[dict]:
     payload = [
         {
             "id": i,
@@ -105,7 +146,7 @@ def estimate_with_ai(dishes: list[Dish], token: str) -> list[dict]:
     )
     content = _chat(
         [{"role": "system", "content": ESTIMATE_SYSTEM}, {"role": "user", "content": user}],
-        token,
+        prov,
     )
     # Gemini occasionally emits a malformed entry (missing/string id) — skip
     # those so one bad entry doesn't dump the whole batch on the fallback.
@@ -203,13 +244,16 @@ def _is_soup_kw(kw: str) -> bool:
 
 def estimate_all(dishes: list[Dish]) -> tuple[list[dict], str]:
     """Returns (estimates aligned with dishes, method string)."""
-    token = gemini_key()
-    if token:
+    provs = providers()
+    for prov in provs:
         for attempt in (1, 2):
             try:
-                return estimate_with_ai(dishes, token), "AI (Gemini via Google AI)"
+                return estimate_with_ai(dishes, prov), f"AI ({prov['label']})"
             except Exception as e:
-                log.warning("AI estimation failed (attempt %d: %s)", attempt, e)
+                log.warning(
+                    "AI estimation via %s failed (attempt %d: %s)", prov["label"], attempt, e
+                )
+    if provs:
         log.warning("AI estimation gave up, using keyword fallback")
     return [_keyword_estimate(d) for d in dishes], "keyword table (rough fallback)"
 
@@ -219,7 +263,7 @@ def estimate_all(dishes: list[Dish]) -> tuple[list[dict], str]:
 # ----------------------------------------------------------------------------
 
 def extract_dishes_from_image(
-    restaurant: str, image_bytes: bytes, media_type: str, day_sk: str, token: str
+    restaurant: str, image_bytes: bytes, media_type: str, day_sk: str
 ) -> list[Dish]:
     b64 = base64.b64encode(image_bytes).decode()
     prompt = (
@@ -232,21 +276,29 @@ def extract_dishes_from_image(
         '"category": "<Polievka|Hlavne jedlo|Special or empty>"}]}. '
         "If that day is not in the image, return {\"dishes\": []}."
     )
-    content = _chat(
-        [
-            {
-                "role": "user",
-                "content": [
-                    {"type": "text", "text": prompt},
-                    {
-                        "type": "image_url",
-                        "image_url": {"url": f"data:{media_type};base64,{b64}", "detail": "high"},
-                    },
-                ],
-            }
-        ],
-        token,
-    )
+    messages = [
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": prompt},
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:{media_type};base64,{b64}", "detail": "high"},
+                },
+            ],
+        }
+    ]
+    content = None
+    last_err: Exception | None = None
+    for prov in providers():
+        try:
+            content = _chat(messages, prov, vision=True)
+            break
+        except Exception as e:
+            log.warning("vision extraction via %s failed: %s", prov["label"], e)
+            last_err = e
+    if content is None:
+        raise last_err or RuntimeError("no AI provider available")
     return [
         Dish(
             restaurant=restaurant,

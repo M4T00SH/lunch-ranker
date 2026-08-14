@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 logs/
 .gemini_key
+.groq_key

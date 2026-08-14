@@ -9,12 +9,17 @@ involved in production.
 
 - Python 3.12; deps: requests, beautifulsoup4, pdfplumber (`requirements.txt`)
 - Run: `python run.py` (flags: `--force`, `--day pondelok..piatok`, `--no-open`)
-- AI: Gemini free tier via Google AI's OpenAI-compatible endpoint, model
-  alias `gemini-flash-latest` (GitHub Models retired 2026-07-30, killed the
-  old GPT-4o path). Key: `GEMINI_API_KEY` secret in Actions / gitignored
-  `.gemini_key` file locally (user's AI Studio account, matuscerula@gmail.com).
-  NO Anthropic API key — user explicitly wants zero API costs. Keyword-table
-  fallback in `core/estimate.py`. Gemini quirks handled there: it burns
+- AI: provider chain in `core/estimate.py` — Gemini free tier first
+  (Google AI's OpenAI-compatible endpoint, model alias `gemini-flash-latest`;
+  GitHub Models retired 2026-07-30, killed the old GPT-4o path), then Groq
+  free tier (`openai/gpt-oss-120b` text, `llama-4-maverick` vision — pinned
+  ids, no evergreen alias; added 2026-08-14 after Gemini 503s pushed a whole
+  page onto the keyword table). Keys: `GEMINI_API_KEY`/`GROQ_API_KEY`
+  secrets in Actions / gitignored `.gemini_key`/`.groq_key` files locally
+  (user's AI Studio + Groq accounts, matuscerula@gmail.com); a provider
+  with no key is skipped. NO Anthropic API key — user explicitly wants
+  zero API costs. Keyword-table
+  last-resort fallback in `core/estimate.py`. Gemini quirks handled there: it burns
   hidden thinking tokens (max_tokens raised to 16000) and occasionally
   emits a malformed estimate entry (skipped per-dish + one batch retry
   instead of dumping the whole batch on the fallback), and the free tier
@@ -23,7 +28,9 @@ involved in production.
   Gemini switch was verified locally + one green Actions run on Sat
   2026-08-01 (zero dishes that day, so the first REAL production AI run is
   Mon 2026-08-03 10:45 — page method line must say "AI (Gemini via Google
-  AI)", not "keyword table"; if not, read that day's Actions log).
+  AI)", not "keyword table"; if not, read that day's Actions log.
+  "AI (Groq)" means Gemini was down that morning and the fallback provider
+  stepped in — values are still proper AI estimates).
 - One adapter file per restaurant in `adapters/`; registry in `config.py`.
 - Adapter contract: `NAME`, `URL`, `scrape(ctx) -> list[Dish] | ImageMenu`.
   Raise `StaleMenuError("...")` when the site still shows an old week — the

@@ -46,18 +46,18 @@ def run(day_idx: int | None = None, force: bool = False) -> dict:
 
     dishes: list[Dish] = []
     warnings: list[str] = []
-    token = est.gemini_key()
+    have_ai = bool(est.providers())
 
     for mod in RESTAURANTS:
         name = mod.NAME
         try:
             result = mod.scrape(ctx)
             if isinstance(result, ImageMenu):
-                if not token:
+                if not have_ai:
                     warnings.append(f"{name}: menu is an image and no AI token is available")
                     continue
                 result = est.extract_dishes_from_image(
-                    name, result.image_bytes, result.media_type, ctx.day_sk, token
+                    name, result.image_bytes, result.media_type, ctx.day_sk
                 )
             if not result:
                 warnings.append(f"{name}: no dishes found for {DAY_LABELS[ctx.day_idx]}")
